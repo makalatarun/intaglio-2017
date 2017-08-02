@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="matx no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matx - Material Design Agency Template</title>
+        <meta name="description" content="Material Agency Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- matx favicons -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="matx-icon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="matx-icon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="matx-icon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="matx-icon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="matx-icon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="matx-icon/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="matx-icon/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="matx-icon/favicon-16x16.png" sizes="16x16"/>
+        <meta name="application-name" content="&nbsp;" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="matx-icon/mstile-144x144.png"/>
+        
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700italic,700,500italic,900' rel='stylesheet' type='text/css'>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/libs/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/libs/mdl/material.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="assets/libs/owl-carousel/owl.transitions.css">
+        <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="assets/libs/sweetalert/sweet-alert.min.css">
+        <link rel="stylesheet" href="assets/libs/sweetalert/ie9.css">
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+
+        <!-- Header Scripts -->
+        <!--[if lt IE 9]>
+            <script src="assets/js/vendor/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <!-- Loader -->
+        <div id="loader" class="loader-wrapper">
+            <div class="matx-preloader"></div>
+        </div>
+        
+        <!-- Overlay display while mobile navigation will open  -->
+        <div class="nav-overlay-bg"></div>
+   
+        <header class="main-header is-sticky">
+
+            <!-- start desktop logo -->
+            <a href="#" class="logos matx-logo">
+                <img class="logo-dark" src="img/popup-logo.png" alt="logo">
+                <img class="logo-lite" src="img/popup-logo.png" alt="logo">
+            </a>
+            <!-- end desktop logo --> 
+            
+            <!-- start desktop nav -->
+            <nav class="nav-typo main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a target="_blank" href="rtl/index.html">RTL Version</a></li>
+                    <li><a target="_blank" href="http://themeforest.net/item/matx-material-design-agency-template/13887396">Buy Now</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">More</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-has-children">
+                                <a href="#">Blog Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog/blog-standard.html">blog Standard</a></li>
+                                    <li><a href="blog/blog-masonry.html">Blog Masonry</a></li>
+                                    <li><a href="blog/blog-masonry-sidebar.html">Blog Masonry Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Single Blog Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog/single/single.html">Image</a></li>
+                                    <li><a href="blog/single/single-audio.html">Audio</a></li>
+                                    <li><a href="blog/single/single-video-vimeo.html">Vimeo</a></li>
+                                    <li><a href="blog/single/single-video-youtube.html">Youtube</a></li>
+                                    <li><a href="blog/single/single-video.html">HTML5 Video</a></li>
+                                    <li><a href="blog/single/single-slider.html">Slider</a></li>
+                                    <li><a href="blog/single/single-quote.html">Quote</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end desktop nav -->
+
+            <!-- start mobile logo -->
+            <a href="#" class="logo matx-logo mobile-logo menu-smooth-scroll" data-target="#home">
+                <img src="img/logo_lite.png" alt="logo">
+            </a>
+            <!-- end mobile logo -->
+            
+            <!-- toogle icons, which are responsible for display and hide menu in small layout -->
+            <div class="mdl-layout__drawer-button mobile-menu-area">
+                <i id="menu-back-btn" class="mobile-menu-ctrl zmdi zmdi-arrow-right"></i>
+                <i id="menu-show-btn" class="mobile-menu-ctrl active zmdi zmdi-menu"></i>
+            </div>
+            
+        </header>
+        <!-- end site main header -->
+
+        <!-- start mobile nav -->
+        <nav class="nav-typo mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a target="_blank" href="rtl/index.html">RTL Version</a></li>
+                <li><a target="_blank" href="http://themeforest.net/item/matx-material-design-agency-template/13887396">Buy Now</a></li>
+                <li class="menu-item-has-children">
+                    <a href="#">More</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item-has-children">
+                            <a href="#">Blog Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog/blog-standard.html">blog Standard</a></li>
+                                <li><a href="blog/blog-masonry.html">Blog Masonry</a></li>
+                                <li><a href="blog/blog-masonry-sidebar.html">Blog Masonry Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Single Blog Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog/single/single.html">Image</a></li>
+                                <li><a href="blog/single/single-audio.html">Audio</a></li>
+                                <li><a href="blog/single/single-video-vimeo.html">Vimeo</a></li>
+                                <li><a href="blog/single/single-video-youtube.html">Youtube</a></li>
+                                <li><a href="blog/single/single-video.html">HTML5 Video</a></li>
+                                <li><a href="blog/single/single-slider.html">Slider</a></li>
+                                <li><a href="blog/single/single-quote.html">Quote</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- end mobile nav -->
+
+        <div style="height: 60px; "></div>
+        
+        <!-- start main wrapper   -->
+        <main class="main-wrapper" id="top">
+
+            <!-- start who-we-are portion -->
+            <section class="primary-bg-color who-we-are">
+                <div class="section-common-space">
+                    <div class="container">
+                        <div class="row">
+                            <div class="clearfix about-content-start icons-module">
+                                <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s">
+                                    <div class="clearfix single-imodule intro-v2">
+                                        <div class="icon-box">
+                                            <i class="zmdi zmdi-layers"></i>
+                                        </div>
+                                        <div class="ic-module-content">
+                                            <h4 class="title-four">Brand Identity</h4>
+                                            <p>Cras sagittis. Vivamus in erat ut urna cursus vestibulum. Vestibulum rutrum, mi nec elementum quam gravida.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s">
+                                    <div class="clearfix single-imodule intro-v2">
+                                        <div class="icon-box">
+                                            <i class="zmdi zmdi-laptop-chromebook"></i>
+                                        </div>
+                                        <div class="ic-module-content">
+                                            <h4 class="title-four">Web Design</h4>
+                                            <p>Donec vitae orci sed dolor rutrum is consequat. Egestas volutpat, metus eget egestas mollis, lacus lacus blandit dui.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s">
+                                    <div class="clearfix single-imodule intro-v2">
+                                        <div class="icon-box">
+                                            <i class="zmdi zmdi-settings"></i>
+                                        </div>
+                                        <div class="ic-module-content">
+                                            <h4 class="title-four">Development</h4>
+                                            <p>Nulla consequat massa quis enim. Nullam sagittis. Nullam accumsan lorem in dui. Sed mollis, eros et ultrices tempus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end who-we-are portion -->
+            
+            <!-- start story-experience portion -->
+            <section class="secondary-bg-color story-experience story-experiencev2">
+                <div class="section-common-space">
+                    <div class="container">
+                        <div class="row">
+                            <div class="story-experience-content-start">
+                                <div class="col-sm-6 col-md-7">
+                                    <article class="standred our-story">
+
+                                        <!-- start section title -->
+                                        <h2 class="title-sec">ABOUT US</h2>
+                                        <!-- end section title -->
+
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolores eveniet. Duis lobortis massa imperdiet quam. Sed turpis. Praesent ut ligula non mi varius sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum.</p>
+                                        <div class="text-left block-btn-parent">
+                                            <a href="#contact" data-target="#contact" class="menu-smooth-scroll mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-default btn-black" data-upgraded=",MaterialButton,MaterialRipple">gET IN TOUCH<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-md-5">
+                                    <article class="standred work-experience">
+                                        <h2 class="title-sec">WORK EXPERIENCE</h2>
+                                        <ul class="progress-bar-wrap" data-action="progress-bar">
+                                            <li class="progress-bar-inner">
+                                                <!-- skill name -->
+                                                <span class="progress-bar-label">Photoshop</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress-bar-L1" data-width="85%">
+                                                        <div class="progress-conunt"><span>85%</span></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="progress-bar-inner">
+                                                <!-- skill name -->
+                                                <span class="progress-bar-label">Wordpress</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress-bar-L1" data-width="90%">
+                                                        <div class="progress-conunt"><span>90%</span></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="progress-bar-inner">
+                                                <!-- skill name -->
+                                                <span class="progress-bar-label">Laravel</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress-bar-L1" data-width="70%">
+                                                        <div class="progress-conunt"><span>70%</span></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end story-experience portion -->
+             
+            <!-- start why choose us portion -->
+            <section class="dark-secion why-choose-us-v2 overflow-hidden">
+                <div class="bg-image wch-v2-bg" data-center="transform: translate3d(0px, -50%, 0px)" data-top-bottom="transform: translate3d(0px, -25%, 0px)" data-bottom-top="transform: translate3d(0px, -75%, 0px)"></div>
+
+                <div class="overlay overlay-six">
+                    <div class="section-common-space">
+                        <div class="container">
+                            <div class="what-we-do-content-start">
+
+                                <!-- start section title -->
+                                <div class="text-center section-heading">
+                                    <h2 class="title-sec">why chose us</h2>
+                                </div>
+                                <!-- end section title -->
+
+                                <div class="wcu-slider-wrap">
+                                    <div class="ov-hidden">
+                                        <div class="row">
+                                            <div class="clearfix slider-items" data-action="whyChoseUsSlider">
+                                                <div class="col-md-12">
+                                                    <div class="text-center cp-cards why-chose-us-cards">
+                                                        <div class="card-head"><i class="zmdi zmdi-laptop"></i></div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-title">CONSIDERED DESIGN</h3>
+                                                            <p>We respond directly to a project’s objectives.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="text-center cp-cards why-chose-us-cards">
+                                                        <div class="card-head"><i class="zmdi zmdi-accounts"></i></div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-title">CREATIVE COLLABORATION</h3>
+                                                            <p>We love working with people who embrace the design</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="text-center cp-cards why-chose-us-cards">
+                                                        <div class="card-head"><i class="zmdi zmdi-globe"></i></div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-title">IMPECCABLE SERVICE</h3>
+                                                            <p>Great service is achieved through professionalism.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="text-center cp-cards why-chose-us-cards">
+                                                        <div class="card-head"><i class="zmdi zmdi-map"></i></div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-title">UNDERSTAND SITUATION</h3>
+                                                            <p>Working with the latest technology we design.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="text-center cp-cards why-chose-us-cards">
+                                                        <div class="card-head"><i class="zmdi zmdi-account"></i></div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-title">Uniquely facilitate.</h3>
+                                                            <p>Rapaciously seize maintainable methodologies for.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="text-center cp-cards why-chose-us-cards">
+                                                        <div class="card-head"><i class="zmdi zmdi-truck"></i></div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-title">Appropriately supply.</h3>
+                                                            <p>Efficiently implement distinctive solutions and.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix slider-cntrl">
+                                        <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect left-arrow wow fadeInLeft" data-wow-duration="1s"><i class="zmdi zmdi-chevron-left"></i></a>
+                                        <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect right-arrow wow fadeInRight" data-wow-duration="1s"><i class="zmdi zmdi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end why choose us portion -->
+
+            <!-- start secvice tab and content portion-->
+            <section class="service servicev2" data-action="count-up">
+                <div class="section-common-space">
+                    <div class="container">
+                        <div class="service-content-start">
+
+                            <!-- start section title -->
+                            <div class="text-center section-heading">
+                                <h2 class="title-sec">SERVICES</h2>
+                            </div>
+                            <!-- end section title -->
+
+                            <div class="service-tabs">
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 col-lg-8 col-lg-offset-2 col-md-offset-1">
+                                            <div class="text-center">
+
+                                                <!-- start tab menu item-->
+                                                <div class="mdl-tabs__tab-bar matx-service-tabbar mdl-shadow--2dp">
+                                                    <a href="#tab1" class="mdl-tabs__tab is-active"><i class="zmdi zmdi-bike"></i></a>
+                                                    <a href="#tab2" class="mdl-tabs__tab"><i class="zmdi zmdi-laptop-chromebook"></i></a>
+                                                    <a href="#tab3" class="mdl-tabs__tab"><i class="zmdi zmdi-album"></i></a>
+                                                    <a href="#tab4" class="mdl-tabs__tab"><i class="zmdi zmdi-camera"></i></a>
+                                                    <a href="#tab5" class="mdl-tabs__tab"><i class="zmdi zmdi-satellite"></i></a>
+                                                </div>
+                                                <!-- end tab menu item-->
+
+                                            </div>
+                                            <!-- start tab content-->
+                                            <div class="matx-tabpanel-wrap">
+                                                <!-- start single tab-->
+                                                <div class="mdl-tabs__panel animated animateSlow fadeIn matx-service-tabpanel is-active" id="tab1">
+                                                    <div class="row tab-title-wrap">
+                                                        <div class="col-sm-6">
+                                                            <h3 class="card-title tab-title">GRAPHIC DESIGN</h3>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="tab-content">
+                                                                <p class="special-para">Collaboratively customize visionary business technologies. Assertively transform high-payoff architectures.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="tab-content">
+                                                        <p class="columnd-text">Monotonectally grow reliable technologies rather than covalent services. Credibly incentivize end-to-end initiatives for maintainable manufactured products. Collaboratively monetize proactive growth strategies without intuitive processes. Energistically restore global quality vectors via team driven leadership. Distinctively revolutionize e-business leadership for efficient partnerships.</p>
+                                                    </div>
+
+                                                    <div class="text-center tab-histry">
+                                                        <span>1999 TO 2014</span> - GRAPHIC DESIGN EXPERIENCE
+                                                    </div>
+
+                                                    <div class="row satistic-wrap">
+
+                                                        <div class="col-xxs-4 col-xs-4">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="312">312</span></div>
+                                                                <div class="bottom">BROCHURE DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xxs-4 col-xs-4 text-center">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="780">780</span></div>
+                                                                <div class="bottom">PACKAGING DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xxs-4 col-xs-4 text-right">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="880">880</span></div>
+                                                                <div class="bottom">POSTER DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- end single tab-->
+
+                                                <!-- start single tab-->
+                                                <div class="mdl-tabs__panel animated animateSlow fadeIn matx-service-tabpanel" id="tab2">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h3 class="card-title tab-title">Web DESIGN</h3>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="tab-content">
+                                                                <p class="special-para"> Energistically scale inexpensive scenarios through out-of-the-box supply chains. Objectively initiatives.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="tab-content">
+                                                        <p class="columnd-text">Conveniently simplify one-to-one ROI whereas quality platforms. Energistically scale inexpensive scenarios through out-of-the-box supply chains. Objectively exploit world-class outsourcing vis-a-vis client-centered initiatives. Collaboratively iterate cooperative action items via strategic meta-services.</p>
+                                                    </div>
+
+                                                    <div class="text-center tab-histry">
+                                                        <span>1995 TO 2015</span> - web DESIGN EXPERIENCE
+                                                    </div>
+
+                                                    <div class="row satistic-wrap">
+
+                                                        <div class="col-sm-4">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="312">312</span></div>
+                                                                <div class="bottom">BROCHURE DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="780">780</span></div>
+                                                                <div class="bottom">PACKAGING DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-right">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="880">880</span></div>
+                                                                <div class="bottom">POSTER DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- end single tab-->
+
+                                                <!-- start single tab-->
+                                                <div class="mdl-tabs__panel animated animateSlow fadeIn matx-service-tabpanel" id="tab3">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h3 class="card-title tab-title">Web Development</h3>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="tab-content">
+                                                                <p class="special-para">Dramatically fashion distinctive potentialities and real-time systems. Assertively customize leading-edge.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="tab-content">
+                                                        <p class="columnd-text">Completely supply high-payoff best practices vis-a-vis seamless e-commerce. Enthusiastically productivate transparent strategic theme areas rather than leading-edge methodologies.</p>
+                                                    </div>
+
+                                                    <div class="text-center tab-histry">
+                                                        <span>2000 TO 2015</span> - web development EXPERIENCE
+                                                    </div>
+
+                                                    <div class="row satistic-wrap">
+
+                                                        <div class="col-sm-4">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="312">312</span></div>
+                                                                <div class="bottom">BROCHURE DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="780">780</span></div>
+                                                                <div class="bottom">PACKAGING DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-right">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="880">880</span></div>
+                                                                <div class="bottom">POSTER DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- end single tab-->
+
+                                                <!-- start single tab-->
+                                                <div class="mdl-tabs__panel animated animateSlow fadeIn matx-service-tabpanel" id="tab4">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h3 class="card-title tab-title">Creative Photography</h3>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="tab-content">
+                                                                <p class="special-para">Distinctively extend competitive best practices vis-a-vis proactive schemas. Enthusiastically.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="tab-content">
+                                                        <p class="columnd-text">Conveniently re-engineer orthogonal functionalities whereas leading-edge methods of empowerment. Interactively embrace technically sound quality vectors for intuitive ideas. Credibly matrix worldwide schemas and excellent "outside the box" thinking. Enthusiastically engineer flexible testing procedures.</p>
+                                                    </div>
+
+                                                    <div class="text-center tab-histry">
+                                                        <span>1995 TO 2015</span> - web DESIGN EXPERIENCE
+                                                    </div>
+
+                                                    <div class="row satistic-wrap">
+
+                                                        <div class="col-sm-4">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="312">312</span></div>
+                                                                <div class="bottom">BROCHURE DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="780">780</span></div>
+                                                                <div class="bottom">PACKAGING DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-right">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="880">880</span></div>
+                                                                <div class="bottom">POSTER DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- end single tab-->
+
+                                                <!-- start single tab-->
+                                                <div class="mdl-tabs__panel animated animateSlow fadeIn matx-service-tabpanel" id="tab5">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h3 class="card-title tab-title">Gallery creation</h3>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="tab-content">
+                                                                <p class="special-para">Energistically synergize team building relationships for flexible quality vectors. Intrinsicly.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="tab-content">
+                                                        <p class="columnd-text">Interactively disseminate enterprise-wide services whereas strategic benefits. Enthusiastically enable one-to-one content vis-a-vis multidisciplinary information. Progressively negotiate premier initiatives via virtual web-readiness. Synergistically reintermediate sustainable e-commerce via alternative vortals. Phosfluorescently coordinate performance.</p>
+                                                    </div>
+
+                                                    <div class="text-center tab-histry">
+                                                        <span>1995 TO 2015</span> - web DESIGN EXPERIENCE
+                                                    </div>
+
+                                                    <div class="row satistic-wrap">
+
+                                                        <div class="col-sm-4">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="312">312</span></div>
+                                                                <div class="bottom">BROCHURE DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="780">780</span></div>
+                                                                <div class="bottom">PACKAGING DESIGN</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 text-right">
+                                                            <div class="satistic">
+                                                                <div class="top"><i class="zmdi zmdi-equalizer"></i><span class="countNumb" data-from="1" data-to="880">880</span></div>
+                                                                <div class="bottom">POSTER DESIGN</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end single tab-->
+                                            </div>
+                                            <!-- start tab content-->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end secvice tab and content portion-->
+
+            <!-- start portfolio section-->
+            <section class="section-main portfolio portfolio-v2">
+                <div class="section-common-space">
+                    <div class="container">
+
+                        <!-- start section title -->
+                        <div class="text-center section-heading">
+                            <h2 class="title-sec">OUR WORK</h2>
+                        </div>
+                        <!-- end section title -->
+
+                        <div class="section-main-content-start" data-action="portfolio">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="text-center portfolio-category-wrap">
+
+                                        <!-- start portfolio category items -->
+                                        <ul class="clearfix portfolio-category mdl-shadow--2dp">
+                                            <li class="filter active" data-target="*">ALL</li>
+                                            <li class="filter" data-target=".art">ART</li>
+                                            <li class="filter" data-target=".accessories">ACCESSORIES</li>
+                                            <li class="filter" data-target=".design">DESIGN</li>
+                                            <li class="filter" data-target=".fashon">FASHION</li>
+                                        </ul>
+                                        <!-- end portfolio category items -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <!-- start portfolio items -->
+                                <div class="clearfix protfolio-items">
+
+                                    <!-- start single portfolio item -->
+                                    <div id="portfolio-01" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-01/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-02" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio art design accessories">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-02/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item-->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-03" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio art fashon">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-03/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-04" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio art accessories fashon">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-04/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-05" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio art accessories">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-01/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-06" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio art design">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-02/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-07" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio art design">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-02/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-08" class="col-xxs-6 col-xs-6 col-sm-4 col-md-3 single-portfolio art design">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-02/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/265x175" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                </div>
+                                <div data-action="portfolioInitItem" class="portfolio-ajax-hidden-div"></div>
+                                <!-- end portfolio items -->
+
+                                <!-- start portfolio load more button -->
+                                <div class="text-center load-portfolio">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-default btn-highlight">LOAD MORE</button>
+                                </div>
+                                <!-- end portfolio load more button -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end portfolio section-->
+
+            <!-- start portfolio section-->
+            <section class="section-main portfolio portfolio-v3">
+                <div class="section-common-space">
+                    <div class="container">
+
+                        <!-- start section title -->
+                        <div class="text-center section-heading">
+                            <h2 class="title-sec">OUR WORK</h2>
+                        </div>
+                        <!-- end section title -->
+
+                        <div class="section-main-content-start" data-action="portfolio">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="text-center portfolio-category-wrap">
+
+                                        <!-- start portfolio category items -->
+                                        <ul class="clearfix portfolio-category mdl-shadow--2dp">
+                                            <li class="filter active" data-target="*">ALL</li>
+                                            <li class="filter" data-target=".art">ART</li>
+                                            <li class="filter" data-target=".accessories">ACCESSORIES</li>
+                                            <li class="filter" data-target=".design">DESIGN</li>
+                                            <li class="filter" data-target=".fashon">FASHION</li>
+                                        </ul>
+                                        <!-- end portfolio category items -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row space-lr-5">
+
+                                <!-- start portfolio items -->
+                                <div class="clearfix protfolio-items">
+
+                                    <!-- start single portfolio item -->
+                                    <div id="portfolio-11" class="col-xxs-6 col-xs-6 col-sm-4 single-portfolio">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-01/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/375x250" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-12" class="col-xxs-6 col-xs-6 col-sm-4 single-portfolio art design accessories">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-02/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/375x250" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item-->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-13" class="col-xxs-6 col-xs-6 col-sm-4 single-portfolio art fashon">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-03/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/375x250" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-14" class="col-xxs-6 col-xs-6 col-sm-4 single-portfolio art accessories fashon">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-04/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/375x250" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-15" class="col-xxs-6 col-xs-6 col-sm-4 single-portfolio art accessories">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-01/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/375x250" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                    <!-- start single portfolio item-->
+                                    <div id="portfolio-16" class="col-xxs-6 col-xs-6 col-sm-4 single-portfolio art design">
+                                        <div class="portfolio-item">
+                                            <a href="portfolios/portfolio-02/portfolio.html" class="ajax-portfolio">
+
+                                                <!-- start portfolio image -->
+                                                <div class="protfolio-image">
+                                                    <img src="http://placehold.it/375x250" alt="portfolio">
+                                                </div>
+                                                <!-- end portfolio image -->
+
+                                                <div class="text-center portfolio-meta">
+                                                    <i class="zmdi zmdi-plus-circle"></i>
+
+                                                    <!-- portfolio items caption -->
+                                                    <h3 class="portfolio-title">item name</h3>
+                                                </div>
+                                                <div class="pf-overlay"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- end single portfolio item -->
+
+                                </div>
+                                <div data-action="portfolioInitItem" class="portfolio-ajax-hidden-div"></div>
+                                <!-- end portfolio items -->
+
+                                <!-- start portfolio load more button -->
+                                <div class="text-center load-portfolio">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-default btn-highlight">LOAD MORE</button>
+                                </div>
+                                <!-- end portfolio load more button -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end portfolio section-->
+
+            <!-- start team section -->
+            <section class="section-main team team-v2">
+                <div class="section-common-space">
+                    <div class="container">
+
+                        <!-- start section title -->
+                        <div class="text-center section-heading">
+                            <h2 class="title-sec">OUR TEAM</h2>
+                        </div>
+                        <!-- end section title -->
+
+                        <div class="ov-hidden">
+                            <div class="row">
+                                <div class="team-content-start">
+                                    <!-- start team slider -->
+                                    <div class="slider-items team-slider styled-paginantion colorsch-white" data-action="teamSlider">
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">STEVEN HACKETT</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">founder &amp; CEO</div>
+                                                    <div class="member-toggle">
+
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">Shane Watson</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">Project Manager</div>
+                                                    <div class="member-toggle">
+
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">JAMES BOND</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">Software Engineer</div>
+                                                    <div class="member-toggle">
+
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">Matias Duarte</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">Creative Head</div>
+                                                    <div class="member-toggle">
+                                                        
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">Dan Wellman</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">Skill trainer</div>
+                                                    <div class="member-toggle">
+                                                        
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">Jeffrey Way</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">Head of Practice</div>
+                                                    <div class="member-toggle">
+                                                        
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">Dennis Ritchie</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">Inventor</div>
+                                                    <div class="member-toggle">
+                                                        
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="team-member">
+                                                <!-- start team member image -->
+                                                <div class="member-img">
+                                                    <img src="http://placehold.it/260x268" alt="">
+                                                </div>
+                                                <div class="text-center member-info">
+
+                                                    <!-- start team member name -->
+                                                    <h4 class="title-four member-name">Rasmus Lerdorf</h4>
+
+                                                    <!-- team member role or designation-->
+                                                    <div class="member-role">Principal Consultant </div>
+                                                    <div class="member-toggle">
+                                                        <ul class="clearfix social member-social hover-round">
+                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end team slider -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end team section -->
+            
+            <!-- start testimonial portion -->
+            <section class="testimonial testimonial-v2">
+                <div class="bg-image testimonial-bg" data-center="transform: translate3d(0px, -50%, 0px)" data-top-bottom="transform: translate3d(0px, -25%, 0px)" data-bottom-top="transform: translate3d(0px, -75%, 0px)"></div>
+
+                <div class="overlay overlay-four">
+                    <div class="section-common-space space-image">
+                        <div class="testimonial-content-start">
+
+                            <!-- start testimonial slider -->
+                            <div class="slider-item testimonials styled-paginantion colorsch-black" data-action="testimonialSlider">
+
+                                <!-- start single testimonial -->
+                                <div class="text-center single-testimonial">
+                                    <div class="recomenders-info">
+                                        <!-- testimonial text -->
+                                        <p>Distinctively whiteboard interactive partnerships through client-centric ideas. Uniquely engineer future-proof testing procedures with bricks-and-clicks metrics. Authoritatively synthesize bleeding-edge supply chains through granular e-services. Monotonectally.</p>
+
+                                        <!-- recommender name and designation -->
+                                        <div><span class="recomenders-name">Jeffrey Way,</span> <span class="recomenders-role"> Nettuts+</span></div>
+                                    </div>
+                                </div>
+                                <!-- end single testimonial -->
+
+                                <!-- start single testimonial -->
+                                <div class="text-center single-testimonial">
+
+                                    <div class="recomenders-info">
+                                        <!-- testimonial text -->
+                                        <p>Quickly leverage existing quality action items before B2B infrastructures. Professionally disintermediate enterprise networks after go forward potentialities. Intrinsicly exploit innovative communities rather than parallel.</p>
+
+                                        <!-- recommender name and designation -->
+                                        <div><span class="recomenders-name">Paul Irish,</span> <span class="recomenders-role"> Themeforest</span></div>
+                                    </div>
+                                </div>
+                                <!-- end single testimonial -->
+
+                                <!-- start single testimonial -->
+                                <div class="text-center single-testimonial">
+                                    <div class="recomenders-info">
+                                        <!-- testimonial text -->
+                                        <p>Professionally integrate granular results through performance based content. Professionally provide access to inexpensive niches after front-end ROI. Competently synthesize backend methodologies whereas multimedia based.</p>
+
+                                        <!-- recommender name and designation -->
+                                        <div><span class="recomenders-name">Addy Osmani,</span> <span class="recomenders-role"> Codecanyon</span></div>
+                                    </div>
+                                </div>
+                                <!-- end single testimonial -->
+
+                            </div>
+                            <!-- end testimonial slider -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end testimonial portion -->
+
+            <!-- start testimonial portion -->
+            <section class=" testimonial testimonial-v3">
+                <div class="section-common-space space-image">
+                    <div class="testimonial-content-start">
+
+                        <!-- start testimonial slider -->
+                        <div class="slider-item testimonials styled-paginantion colorsch-white" data-action="testimonialSlider">
+
+                            <!-- start single testimonial -->
+                            <div class="text-center single-testimonial">
+
+                                <!-- start testimonial thumbnail -->
+                                <div class="recomenders-thumb">
+                                    <img src="img/testimonial/01.png" alt="">
+                                </div>
+                                <!-- end testimonial thumbnail -->
+
+                                <div class="recomenders-info">
+                                    <!-- testimonial text -->
+                                    <p>Distinctively whiteboard interactive partnerships through client-centric ideas. Uniquely engineer future-proof testing procedures with bricks-and-clicks metrics. Authoritatively synthesize bleeding-edge supply chains through granular e-services. Monotonectally.</p>
+
+                                    <!-- recommender name and designation -->
+                                    <div><span class="recomenders-name">Jeffrey Way,</span> <span class="recomenders-role"> Nettuts+</span></div>
+                                </div>
+                            </div>
+                            <!-- end single testimonial -->
+
+                            <!-- start single testimonial -->
+                            <div class="text-center single-testimonial">
+
+                                <!-- start testimonial thumbnail -->
+                                <div class="recomenders-thumb">
+                                    <img src="img/testimonial/02.png" alt="">
+                                </div>
+                                <!-- end testimonial thumbnail -->
+
+                                <div class="recomenders-info">
+                                    <!-- testimonial text -->
+                                    <p>Quickly leverage existing quality action items before B2B infrastructures. Professionally disintermediate enterprise networks after go forward potentialities. Intrinsicly exploit innovative communities rather than parallel.</p>
+
+                                    <!-- recommender name and designation -->
+                                    <div><span class="recomenders-name">Paul Irish,</span> <span class="recomenders-role"> Themeforest</span></div>
+                                </div>
+                            </div>
+                            <!-- end single testimonial -->
+
+                            <!-- start single testimonial -->
+                            <div class="text-center single-testimonial">
+
+                                <!-- start testimonial thumbnail -->
+                                <div class="recomenders-thumb">
+                                    <img src="img/testimonial/03.png" alt="">
+                                </div>
+                                <!-- end testimonial thumbnail -->
+
+                                <div class="recomenders-info">
+                                    <!-- testimonial text -->
+                                    <p>Professionally integrate granular results through performance based content. Professionally provide access to inexpensive niches after front-end ROI. Competently synthesize backend methodologies whereas multimedia based.</p>
+
+                                    <!-- recommender name and designation -->
+                                    <div><span class="recomenders-name">Addy Osmani,</span> <span class="recomenders-role"> Codecanyon</span></div>
+                                </div>
+                            </div>
+                            <!-- end single testimonial -->
+
+                        </div>
+                        <!-- end testimonial slider -->
+                    </div>
+                </div>
+            </section>
+            <!-- end testimonial portion -->
+
+            <!-- start who-we-are portion -->
+            <section class="dark-secion what-we-do-v3">
+
+                <div class="bg-image wwd-v3-bg" data-center="transform: translate3d(0px, -50%, 0px)" data-top-bottom="transform: translate3d(0px, -25%, 0px)" data-bottom-top="transform: translate3d(0px, -75%, 0px)"></div>
+
+                <div class="overlay overlay-four">
+                    <div class="section-common-space">
+                        <div class="container">
+                            <!-- start section title -->
+                            <div class="text-center section-heading">
+                                <h2 class="title-sec">WHAT WE DO</h2>
+                            </div>
+                            <!-- end section title -->
+                            <div class="row">
+                                <div class="clearfix about-content-start icons-module">
+                                    <div class="col-xs-12 col-sm-4 col-xs-6 col-xxs-12 wow fadeInUp" data-wow-duration="1s">
+                                        <div class="clearfix single-imodule wwd-module-v3">
+                                            <div class="icon-box">
+                                                <i class="zmdi zmdi-laptop-mac"></i>
+                                            </div>
+                                            <div class="ic-module-content">
+                                                <h4 class="title-four">Clean design</h4>
+                                                <p>Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-xs-6 col-xxs-12 wow fadeInUp" data-wow-duration="1s">
+                                        <div class="clearfix single-imodule wwd-module-v3">
+                                            <div class="icon-box">
+                                                <i class="zmdi zmdi-account"></i>
+                                            </div>
+                                            <div class="ic-module-content">
+                                                <h4 class="title-four">Group tasks</h4>
+                                                <p>Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-xs-6 col-xxs-12 wow fadeInUp" data-wow-duration="1s">
+                                        <div class="clearfix single-imodule wwd-module-v3">
+                                            <div class="icon-box">
+                                                <i class="zmdi zmdi-devices"></i>
+                                            </div>
+                                            <div class="ic-module-content">
+                                                <h4 class="title-four">Responsive UI</h4>
+                                                <p>Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-xs-6 col-xxs-12 wow fadeInUp" data-wow-duration="1s">
+                                        <div class="clearfix single-imodule wwd-module-v3">
+                                            <div class="icon-box">
+                                                <i class="zmdi zmdi-case"></i>
+                                            </div>
+                                            <div class="ic-module-content">
+                                                <h4 class="title-four">Easy managment</h4>
+                                                <p>Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-xs-6 col-xxs-12 wow fadeInUp" data-wow-duration="1s">
+                                        <div class="clearfix single-imodule wwd-module-v3">
+                                            <div class="icon-box">
+                                                <i class="zmdi zmdi-chart-donut"></i>
+                                            </div>
+                                            <div class="ic-module-content">
+                                                <h4 class="title-four">QUICK REPORTS</h4>
+                                                <p>Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-xs-6 col-xxs-12 wow fadeInUp" data-wow-duration="1s">
+                                        <div class="clearfix single-imodule wwd-module-v3">
+                                            <div class="icon-box">
+                                                <i class="zmdi zmdi-coffee"></i>
+                                            </div>
+                                            <div class="ic-module-content">
+                                                <h4 class="title-four">gREAT SUPPORT</h4>
+                                                <p>Lorem ipsum dolor consetuer adipicing sed diam ticidut erat votpat dolore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end who-we-are portion -->
+
+            <!-- start brief portion -->
+            <section class="primary-bg-color brief">
+                <div class="section-common-space">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-7 col-lg-7 brief-half brief-slider-wrap">
+                                <div class="brief-slider-main styled-paginantion colorsch-white " data-action="briefSlider">
+                                    <img src="img/briefslider/01.png" alt="">
+                                    <img src="img/briefslider/02.png" alt="">
+                                </div>
+                                <div class="clearfix slider-cntrl">
+                                    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect left-arrow wow fadeInLeft" data-wow-duration="1s"><i class="zmdi zmdi-chevron-left"></i></a>
+                                    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect right-arrow wow fadeInRight" data-wow-duration="1s"><i class="zmdi zmdi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-lg-4 col-lg-offset-1 brief-half brief-content">
+                                <h2 class="title-sec">MATERIAL DESIGN</h2>
+                                <p>Sed ut perspiciatis illo iste natus error sit voluptatem accusantium doloremque laudantium, totam rem bet aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-default btn-highlight">BUY now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- start brief portion -->
+
+            <!-- start brief portion -->
+            <section class="secondary-bg-color brief brief-v2">
+                <div class="section-common-space">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-lg-4 brief-half brief-content">
+                                <h2 class="title-sec">MATERIAL DESIGN</h2>
+                                <p>Sed ut perspiciatis illo iste natus error sit voluptatem accusantium doloremque laudantium, totam rem bet aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-default btn-highlight">BUY now</a>
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-7 col-lg-offset-1 brief-half brief-slider-wrap">
+                                <div class="brief-slider-main styled-paginantion colorsch-white" data-action="briefSlider">
+                                    <img src="img/briefslider/03.png" alt="">
+                                    <img src="img/briefslider/04.png" alt="">
+                                </div>
+                                <div class="clearfix slider-cntrl">
+                                    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect left-arrow wow fadeInLeft" data-wow-duration="1s"><i class="zmdi zmdi-chevron-left"></i></a>
+                                    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect right-arrow wow fadeInRight" data-wow-duration="1s"><i class="zmdi zmdi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- start brief portion -->
+
+        </main>
+        <!-- end main wrapper   -->
+        
+        <!-- start main footer -->
+        <footer class="main-footer">
+            <section class="footer-top">
+                <div class="section">
+                    <div class="section-common-space">
+                        <div class="container">
+                            <div class="row">
+                                <div class="text-center ft-content-start">
+                                    <a href="" data-target="#top" class="logo menu-smooth-scroll footer-logo wow fadeIn" data-wow-duration="1s">
+                                        <img src="img/logo_lite.png" alt="logo">
+                                    </a>
+                                    <ul class="clearfix social footer-social hover-round">
+                                        <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="text-center">
+                    <p>MATX &copy; 2016. ALL RIGHT RESERVED</p>
+                </div>
+            </section>
+        </footer>
+        <!-- end main footer -->
+        
+        <!-- footer script start  -->
+        <script>window.jQuery || document.write('<script type="text/javascript" src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        <script type="text/javascript" src="assets/libs/mdl/material.min.js"></script>
+        <script type="text/javascript" src="assets/libs/sweetalert/sweet-alert.min.js"></script>
+        <script type="text/javascript" src="assets/js/all-plugins.js"></script>
+        <script type="text/javascript" src="assets/js/common-plugins.js"></script>
+        <script type="text/javascript" src="assets/libs/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/common.js"></script>
+        <script type="text/javascript" src="assets/js/all-components.js"></script>
+    </body>
+</html>

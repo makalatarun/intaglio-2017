@@ -1,0 +1,5 @@
+[20-May-2016 08:05:35 UTC] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/iimcintaglio/public_html/gcm_chat/demo.php on line 23
+[20-May-2016 10:47:22 UTC] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/iimcintaglio/public_html/gcm_chat/demo.php on line 23
+[04-Jul-2016 08:16:36 UTC] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'root_chat'@'localhost' to database 'gcm_chat_iimc' in /home/iimcintaglio/public_html/gcm_chat/include/db_connect.php on line 22
+[04-Jul-2016 08:16:36 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/iimcintaglio/public_html/gcm_chat/demo.php on line 60
+[04-Jul-2016 08:16:36 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/iimcintaglio/public_html/gcm_chat/demo.php on line 61
