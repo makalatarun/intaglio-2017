@@ -12,6 +12,32 @@ body
 		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
 	}
 
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/rev_intag_3.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
+
 a {
 	color: #47C6F8;
 }
@@ -243,6 +269,7 @@ header .social-icon li a
 .element {
 	height: 60px;
 	font-size: 16px;
+	font-weight: bold
 
 }
 /* end home */
