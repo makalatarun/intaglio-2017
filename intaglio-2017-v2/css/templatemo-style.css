@@ -36,8 +36,6 @@ body, html {
     }
 }
 
-
-
 a {
 	color: #47C6F8;
 }
@@ -62,7 +60,7 @@ h2 span
 
 /* start events team about portfolio contact */
 #events, #team, #about,
-#portfolio, #contact
+#portfolio, #contact, #sponsors
 	{
 		padding-top: 60px;
 		padding-bottom: 40px;
@@ -364,6 +362,13 @@ header .social-icon li a
 		padding-bottom: 14px;
 	}
 /* end about */
+
+#sponsors .col-md-4
+	{
+		padding: 40px;
+		-webkit-transition: all 0.4s ease-in-out;
+		        transition: all 0.4s ease-in-out;
+	}
 
 /* start portfolio */
 #portfolio
