@@ -1,0 +1,105 @@
+#intaglio-over-years{
+  background: url(../img/rev_intag_3.jpg) no-repeat center center;
+}
+
+.text-over{
+  color: white;
+  font-weight: bold;
+}
+
+li#home.js_nav-item.nav-item.active {
+  background-color: darkgrey;
+}
+
+li.js_nav-item.nav-item.active {
+  background-color: lightskyblue;
+}
+
+
+#slide_img img{
+  width : 250px;
+}
+
+@media (max-width: 768px) {
+  #slide-img {
+    width: 300px;
+    margin-left: 10px;
+    border:'5'
+  }
+}
+
+.overlay-container {
+    margin: 0 auto;
+    max-width: 180px;
+}
+
+/*
+ * Caption component
+ */
+.caption {
+    position: relative;
+    overflow: hidden;
+
+    /* Only the -webkit- prefix is required these days */
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+.caption::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+
+.caption:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+
+.caption__media {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.caption__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.caption__overlay__title {
+
+    font-size : 18px;
+    color: white;
+    -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+            transform: translateY( calc(-100% - 10px) );
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay__title {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
