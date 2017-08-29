@@ -31,6 +31,7 @@ li.js_nav-item.nav-item.active {
 .overlay-container {
     margin: 0 auto;
     max-width: 180px;
+    height: 180px;
 }
 
 /*

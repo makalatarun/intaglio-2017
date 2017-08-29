@@ -21,9 +21,12 @@
         <meta content="" name="author"/>
 
         <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="fonts/font.css" rel="stylesheet" type="text/css">
         <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link href="vendor/sign-up-login-form/css/style.css" rel="stylesheet" type="text/css"/>
+
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/animate.css" rel="stylesheet">
@@ -85,6 +88,7 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Gallery</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#sponsors">Sponsors</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li id = 'regBtn' class="js_nav-item nav-item" style = 'background-color:red; cursor:pointer'><a class="nav-item-child nav-item-hover">Register/Sign In</a></li>
                             </ul>
                         </div>
                     </div>
@@ -286,356 +290,7 @@
 
         <!-- Events -->
         <div id = 'events'>
-          <div class="content-lg container">
-            <div class="row margin-b-10">
-                <div class="col-sm-6">
-                    <h2>EVENTS</h2>
-                </div>
-            </div>
-            <div class="wrapper">
 
-      				<ul id="sb-slider" class="sb-slider">
-      					<li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>Entreprenuership</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-      					<li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>Finance</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-      					<li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>Marketing</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-      					<li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>Flagship</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-      					<li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>Public Policy</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-      					<li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>OPS</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-      					<li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>Quizzing</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-                <li>
-                  <div class = 'work work-popup-trigger'>
-                    <div class="work-overlay">
-    						        <img src="img/1.jpg" alt="image1"/>
-    						        <div class="sb-description">
-						               <h3>Strategy</h3>
-    						        </div>
-                    </div>
-                    <div class="work-popup-overlay">
-                        <div class="work-popup-content">
-                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                            <div class="margin-b-30">
-                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                <span>Clean &amp; Minimalistic Design</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                        <ul class="list-inline work-popup-tag">
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="margin-t-10 sm-margin-t-0">
-                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      					</li>
-      				</ul>
-
-      				<div id="shadow" class="shadow"></div>
-
-      				<div id="nav-arrows" class="nav-arrows">
-      					<a href="#">Next</a>
-      					<a href="#">Previous</a>
-      				</div>
-
-      				<div id="nav-dots" class="nav-dots">
-      					<span class="nav-dot-current"></span>
-      					<span></span>
-      					<span></span>
-      					<span></span>
-      					<span></span>
-      					<span></span>
-      					<span></span>
-      				</div>
-
-      			</div>
-          </div>
         </div>
         <!-- End Events -->
 
@@ -656,11 +311,11 @@
                         <div class="overlay-container">
                           <article class="caption">
                               <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                              <img class="swiper-clients-img caption__media" src="img/team/aishwarya.jpg" alt="Clients Logo">
+                              <img class="swiper-clients-img caption__media" src="img/team/abhishek.JPG" style = 'width:400px' alt="Clients Logo">
                               <div class="caption__overlay">
-                                  <h1 class="caption__overlay__title">Aishwarya Agarwal<br/>aishwaryaa2017@email.iimcal.ac.in</h1>
+                                  <h1 class="caption__overlay__title">Abhishek Paul<br/>abhishekp2018@email.iimcal.ac.in</h1>
                                   <p class="caption__overlay__content">
-                                      Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                      <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                   </p>
                               </div>
                           </article>
@@ -670,11 +325,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/ajay.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/arnab.jpg" alt="Clients Logo">
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title">Arnab Animesh Das <br/> arnabad2018@email.iimcal.ac.in </h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -684,11 +339,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/akash.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/astik.JPG" alt="Clients Logo">
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title">Astik Baraik <br/> astikb2018@email.iimcal.ac.in </h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -698,11 +353,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/amrita.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/abul.JPG" alt="Clients Logo">
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title">Nalband Abul Aala Abubakkar <br/> nalbandaa2018@email.iimcal.ac.in </h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -712,11 +367,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/divya.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/prajith.JPG" alt="Clients Logo">
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title">Prajith Prasad <br/> prajithp2018@email.iimcal.ac.in </h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -726,11 +381,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/dwijesh.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/ramyakant.JPG" alt="Clients Logo">
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title"> Ramya Kant Desabattula <br/> ramyakd2018@email.iimcal.ac.in </h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -740,11 +395,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/harshal.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/sarthak.jpg" alt="Clients Logo" style = 'height : 240px'>
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title">Sarthak Sood <br/> sarthaks2018@email.iimcal.ac.in </h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -754,11 +409,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/jatin.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/sumit.JPG" alt="Clients Logo">
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title">Sumit Kathuria <br/> sumitk2018@email.iimcal.ac.in</h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -768,67 +423,11 @@
                           <div class="overlay-container">
                             <article class="caption">
                                 <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/kuldeep.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/swaraj.JPG" alt="Clients Logo">
                                 <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
+                                    <h1 class="caption__overlay__title">Swaraj Rathore <br/> swarajr2018@email.iimcal.ac.in </h1>
                                     <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
-                                    </p>
-                                </div>
-                            </article>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="overlay-container">
-                            <article class="caption">
-                                <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/shrivatsa.jpg" alt="Clients Logo">
-                                <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
-                                    <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
-                                    </p>
-                                </div>
-                            </article>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="overlay-container">
-                            <article class="caption">
-                                <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/yogesh.jpg" alt="Clients Logo">
-                                <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
-                                    <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
-                                    </p>
-                                </div>
-                            </article>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="overlay-container">
-                            <article class="caption">
-                                <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/yogesh1.jpg" alt="Clients Logo">
-                                <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
-                                    <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
-                                    </p>
-                                </div>
-                            </article>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="overlay-container">
-                            <article class="caption">
-                                <!-- <img class="" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" /> -->
-                                <img class="swiper-clients-img caption__media" src="img/team/yogesh2.jpg" alt="Clients Logo">
-                                <div class="caption__overlay">
-                                    <h1 class="caption__overlay__title">Alaska</h1>
-                                    <p class="caption__overlay__content">
-                                        Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait.
+                                        <!-- Alaska is a U.S. state situated in the northwest extremity of the North American continent. Bordering the state is Canada to the east, the Arctic Ocean to the north, and the Pacific Ocean to the west and south, with Russia (specifically, Siberia) further west across the Bering Strait. -->
                                     </p>
                                 </div>
                             </article>
@@ -844,219 +443,138 @@
 
         <!-- Work -->
         <div id="work">
-            <div class="section-seperator">
-                <div class="content-md container">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>GALLERY</h2>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <!-- Masonry Grid -->
-                    <div class="masonry-grid row">
-                        <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                    <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                    <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                    <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x415/01.jpg" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                    <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                    <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                    <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                    <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                    <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                    <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                    <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                    <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                    <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                    <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                    <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                    <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                    </div>
-                    <!-- End Masonry Grid -->
+          <div class="content-lg container">
+            <div class="row margin-b-10">
+                <div class="col-sm-6">
+                    <h2>GALLERY</h2>
                 </div>
             </div>
+            <div class="wrapper">
+
+              <ul id="sb-slider" class="sb-slider">
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/rev_intag_4.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Entreprenuership</h3>
+                        </div> -->
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/1.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/2.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/3.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/4.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/5.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/6.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/7.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/8.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+                <li>
+                  <div class = 'work work-popup-trigger'>
+                    <div class="work-overlay">
+                        <img src="img/9.jpg" alt="image1"/>
+                        <!-- <div class="sb-description">
+                           <h3>Finance</h3>
+                        </div> -->
+                    </div>
+                    </div>
+                </li>
+              </ul>
+
+              <div id="shadow" class="shadow"></div>
+
+              <div id="nav-arrows" class="nav-arrows">
+                <a href="#">Next</a>
+                <a href="#">Previous</a>
+              </div>
+
+              <div id="nav-dots" class="nav-dots">
+                <span class="nav-dot-current"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+            </div>
           </div>
-          <!-- End Work -->
+        </div>
+        <!-- End Work -->
 
           <!-- Sponsors -->
           <div id = 'sponsors'>
@@ -1069,34 +587,174 @@
                 <!-- Swiper Clients -->
                 <div class="swiper-slider swiper-clients">
                     <!-- Swiper Wrapper -->
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" style = 'align-items:center'>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/boi_logo.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/1.png" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/eic.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/2.png" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/axis_logo.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/3.png" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/cil_logo.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/4.jpg" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/incredible_india.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/5.png" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/starpoker_logo.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/6.jpg" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/starsports_logo.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/7.jpg" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/the_caravan.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/8.png" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/sponsors/zee_biz.jpg" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="img/sponsors/9.png" alt="Clients Logo">
                         </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/10.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/11.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/12.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/13.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/14.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/15.gif" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/16.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/17.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/18.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/19.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/20.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/21.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/22.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/23.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/24.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/25.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/26.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/27.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/28.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/29.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/30.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/31.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/32.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/33.gif" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/34.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/35.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/36.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/37.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/38.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/39.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/40.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/41.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/42.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/43.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/44.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/45.JPG" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/46.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/47.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/48.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/49.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/50.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/51.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/52.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/53.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/54.jpg" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/sponsors/55.jpg" alt="Clients Logo">
+                        </div>
+
+
                     </div>
                     <!-- End Swiper Wrapper -->
                 </div>
@@ -1173,6 +831,95 @@
         <!-- End Contact -->
         <!--========== END PAGE LAYOUT ==========-->
 
+        <!-- Registration -->
+
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form">
+              <ul class="tab-group">
+                <li class="tab active"><a href="#signup">Sign Up</a></li>
+                <li class="tab"><a href="#login">Log In</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="signup">
+                  <!-- <h1>Sign Up for Free</h1> -->
+
+                  <form action="/" method="post">
+
+                  <div class="top-row">
+                    <div class="field-wrap">
+                      <label>
+                        First Name<span class="req">*</span>
+                      </label>
+                      <input type="text" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                      <label>
+                        Last Name<span class="req">*</span>
+                      </label>
+                      <input type="text"required autocomplete="off"/>
+                    </div>
+                  </div>
+
+                  <div class="field-wrap">
+                    <label>
+                      Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                  </div>
+
+                  <div class="field-wrap">
+                    <label>
+                      Set A Password<span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                  </div>
+
+                  <button type="submit" class="button button-block"/>Get Started</button>
+
+                  </form>
+
+                </div>
+
+                <div id="login">
+                  <!-- <h1>Welcome Back!</h1> -->
+
+                  <form action="/" method="post">
+
+                    <div class="field-wrap">
+                    <label>
+                      Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                  </div>
+
+                  <div class="field-wrap">
+                    <label>
+                      Password<span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                  </div>
+
+                  <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                  <button class="button button-block"/>Log In</button>
+
+                  </form>
+
+                </div>
+
+              </div><!-- tab-content -->
+
+            </div>
+          </div>
+
+        </div>
+        <!-- End Registration -->
+
         <!--========== FOOTER ==========-->
         <footer class="footer">
             <!-- Links -->
@@ -1242,12 +989,13 @@
         <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
         <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
         <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/sign-up-login-form/js/index.js" type="text/javascript"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
 
         <!-- PAGE LEVEL SCRIPTS -->
         <script src="js/layout.min.js" type="text/javascript"></script>
         <script src="js/components/wow.min.js" type="text/javascript"></script>
-        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/swiper.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
         <script src="js/components/google-map.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/jquery.slicebox.js"></script>
@@ -1339,24 +1087,40 @@
     				})();
 
     				Page.init();
-
-
     			});
 
-        //   function initMap() {
-        //     var uluru = {lat: 22.4452118, lng: 88.2969295};
-        //     var map = new google.maps.Map(document.getElementById('map_custom'), {
-        //       zoom: 17,
-        //       center: uluru
-        //     });
-        //     var marker = new google.maps.Marker({
-        //       position: uluru,
-        //       map: map
-        //     });
-        //   }
-    		// </script>
-        // <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSGDIeHeIeyQiMwM0os3h_McoXbcdTVFw&callback=initMap">
-        </script>
+          // Get the modal
+          var modal = document.getElementById('myModal');
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("regBtn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          var navbar_color = document.getElementsByClassName('navbar')[0];
+
+          // When the user clicks on the button, open the modal
+          btn.onclick = function() {
+              modal.style.display = "block";
+              console.log(navbar_color);
+              // navbar_color.style.background = 'black'
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+
+
+    </script>
     </body>
     <!-- END BODY -->
 </html>

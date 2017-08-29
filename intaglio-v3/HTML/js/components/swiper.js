@@ -2,6 +2,9 @@ $(window).load(function(){
     // Swiper Clients
     var swiper = new Swiper('.swiper-clients', {
         slidesPerView: 5,
+        speed: 1000,
+        autoplay: 2000,
+        autoplayDisableOnInteraction: false,
         spaceBetween: 50,
         loop: true,
         breakpoints: {
@@ -28,6 +31,13 @@ $(window).load(function(){
         }
     });
 
+
+    $(".swiper-clients").hover(function(){
+       this.swiper.stopAutoplay();
+      }, function(){
+       this.swiper.startAutoplay();
+      });
+
     // Swiper Clients
     var swiper = new Swiper('.swiper-testimonials', {
         speed: 1000,
@@ -35,4 +45,5 @@ $(window).load(function(){
         slidesPerView: 1,
         loop: true,
     });
+
 });
