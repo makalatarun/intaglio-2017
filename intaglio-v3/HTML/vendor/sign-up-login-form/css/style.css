@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-html {
+/*html {
   overflow-y: hidden;
-}
+}*/
 
 /*body {
   background: #c1bdba;
@@ -24,7 +24,7 @@ a:hover {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1031; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -45,9 +45,9 @@ a:hover {
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: black;
     float: right;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
 }
 

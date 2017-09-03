@@ -9,15 +9,29 @@
 
 li#home.js_nav-item.nav-item.active {
   background-color: darkgrey;
+  height: 71px;
 }
 
 li.js_nav-item.nav-item.active {
-  background-color: lightskyblue;
+  background-color: darkgrey;
+  height: 71px;
+}
+
+li.js_nav-item.nav-item{
+  height: 71px;
 }
 
 
 #slide_img img{
   width : 250px;
+}
+
+#work > .swiper-clients-img{
+  width : 212px;
+}
+
+a.header.nav-item-hover {
+  margin-top: -10px
 }
 
 @media (max-width: 768px) {
@@ -30,7 +44,7 @@ li.js_nav-item.nav-item.active {
 
 .overlay-container {
     margin: 0 auto;
-    max-width: 180px;
+    width: 200px;
     height: 180px;
 }
 
@@ -77,8 +91,8 @@ li.js_nav-item.nav-item.active {
     padding: 10px;
     color: white;
 
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
 
     transition: -webkit-transform .35s ease-out;
     transition:         transform .35s ease-out;
@@ -104,3 +118,190 @@ li.js_nav-item.nav-item.active {
     -webkit-transform: translateY(0);
             transform: translateY(0);
 }
+
+/**, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box;}*/
+/*
+h1 {padding: 100px 0; font-weight: 400; text-align: center;}
+p {margin: 0 0 20px; line-height: 1.5;}*/
+p { color : #a6a7aa;}
+
+.main {margin: 0 auto; min-width: 320px; max-width: 1081px; margin-top: -113px;}
+.main > .content {background: #fff; color: #373737;}
+.main > .content > div {display: none; padding: 20px 25px 5px;}
+
+input {display: none;}
+label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;}
+label:hover {color: darkgrey; cursor: pointer;}
+input:checked + label {background: #ed5a6a; color: #fff;}
+
+#tab1:checked ~ .content #content1,
+#tab2:checked ~ .content #content2,
+#tab3:checked ~ .content #content3,
+#tab4:checked ~ .content #content4,
+#tab5:checked ~ .content #content5,
+#tab6:checked ~ .content #content6,
+#tab7:checked ~ .content #content7,
+#tab8:checked ~ .content #content8,
+#tab9:checked ~ .content #content9,
+#tab10:checked ~ .content #content10,
+#tab11:checked ~ .content #content11,
+#tab12:checked ~ .content #content12,
+#tab13:checked ~ .content #content13 {
+  display: block;
+}
+
+
+@media screen and (max-width: 400px) {
+  label {padding: 15px 10px;}
+
+  label[for="tab9"]{
+    margin-left: 0px;
+  }
+}
+
+.events-background {
+  background: #5f2c82;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+
+	border: 1px solid #ccc;
+}
+
+	.flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front {
+	width: 200px;
+	height: 180px;
+}
+
+.back{
+  width: 198px;
+	height: 178px;
+}
+
+.back-title {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.back-position {
+  display: block;
+  text-align: center;
+  margin-top: -20px;
+  color: black;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	/*background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;*/
+	z-index: 2;
+}
+
+.back {
+
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	background: #f8f8f8;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*.front .name {
+	font-size: 2em;
+	display: inline-block;
+	background: rgba(33, 33, 33, 0.9);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: 60px;
+	left: 25%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}*/

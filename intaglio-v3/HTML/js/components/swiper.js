@@ -3,7 +3,7 @@ $(window).load(function(){
     var swiper = new Swiper('.swiper-clients', {
         slidesPerView: 5,
         speed: 1000,
-        autoplay: 2000,
+        autoplay: 1000,
         autoplayDisableOnInteraction: false,
         spaceBetween: 50,
         loop: true,
