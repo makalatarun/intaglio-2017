@@ -142,9 +142,10 @@
 
 .ps-slides {
 	top: 0px;
-	bottom: 200px;
-	width: 100%;
-	height: 75%;
+	right: 37px;
+  bottom: 200px;
+  width: 87%;
+	height: 100%;
 }
 
 .ps-slides > div {
@@ -156,8 +157,7 @@
 .ps-slidewrapper > nav {
 	width: 100%;
 	height: 25%;
-	bottom: 0px;
-	right: 0px;
+	bottom: 138px;
 	z-index: 1000;
 	pointer-events: all;
 }
@@ -169,6 +169,16 @@
 	float: left;
 	box-shadow: inset 0 0 0 9999px rgba(207,227,206,0.8);
 	outline: none;
+}
+
+.ps-next {
+	transform: rotate(90deg);
+	right: -80px;
+}
+
+.ps-prev {
+	right: 80px;
+	transform: rotate(90deg);
 }
 
 .ps-slidewrapper > nav > a:first-child {
