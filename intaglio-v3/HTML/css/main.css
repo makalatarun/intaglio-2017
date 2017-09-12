@@ -261,7 +261,7 @@ input:checked + label {background: #ed5a6a; color: #fff;}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 100000000000; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -332,6 +332,26 @@ input:checked + label {background: #ed5a6a; color: #fff;}
   margin-top: 70px;
 }
 
+.fa {
+    padding: 10px;
+    font-size: 23px;
+    width: 36px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-danger {
+  margin-left: 173px;
+  margin-top: -1px;
+}
+
+.ps-slides,.nav-reg,.header-slider {
+  cursor: pointer;
+}
+
+.header-slider:hover {
+  opacity: 0.7;
+}
 
 /*.front .name {
 	font-size: 2em;

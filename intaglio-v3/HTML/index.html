@@ -14,6 +14,7 @@
         <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
@@ -352,33 +353,36 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Marketplace</h2>
+                          <h2 onclick="registerEvent('marketplace')" class='header-slider'>Marketplace</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Good marketing is more than the 7Ps and fancy campaigns, it can change the face of a whole industry and put the firm ahead in the Marketplace. This event tests your ability to make a full proof marketing plan that can give Kotler a run for his money. It is a battle to create a marketing strategy.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("marketplace")'>Register</button>
                           <a href = 'marketplace.html' target = '_blank'>More Details</a>
                         </div>
                         <div class="ps-content">
-                          <h2>Adsense</h2>
+                          <h2  onclick="registerEvent('adsense')" class='header-slider'>Adsense</h2>
                           <!-- <span class="ps-price">£100</span> -->
                           <p>Think you know the ad when you see it? This event tests your advertisement making and analysing skills. The creative minds will battle it out to create their own product and advertisement campaigns and present the rationale to a judging panel.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("adsense")'>Register</button>
                           <a href = 'adsense.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/80163804/#/60203882">Buy this item</a> -->
                         </div>
                         <div class="ps-content">
-                          <h2>Simulation</h2>
+                          <h2  onclick="registerEvent('simulation')" class='header-slider'>Simulation</h2>
                           <!-- <span class="ps-price">£65</span> -->
                           <p>As close as it gets to being a real life chief marketing officer of a company. Choose your brands, customise your products, target the right customers, and use the right advertisements in order to be the market leader in the interactive simulation event.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("simulation")'>Register</button>
                           <a href = 'simulation.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/90185320/#/20115038">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/marketplace/marketplace1.jpg);"></div>
-                          <div style="background-image:url(img/events/adsense.jpg);"></div>
-                          <div style="background-image:url(img/events/simulation.jpg);"></div>
+                          <div style="background-image:url(img/events/marketplace/marketplace1.jpg);"  onclick="registerEvent('marketplace')"></div>
+                          <div style="background-image:url(img/events/adsense.jpg);"  onclick="registerEvent('adsense')"></div>
+                          <div style="background-image:url(img/events/simulation.jpg);"  onclick="registerEvent('simulation')"></div>
                         </div>
-                        <nav id = 'market'>
+                        <nav id = 'market' onclick="registerEvent('marketplace')" style='cursor:pointer'>
                           <a href="#" class="ps-prev" ></a>
                           <a href="#" class="ps-next" ></a>
                         </nav>
@@ -389,33 +393,36 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Fingod</h2>
+                          <h2  onclick="registerEvent('fingod')" class='header-slider'>Fingod</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Finance has always been at the top of our minds when it comes to decision making. FinGod is a skill-test across all the domains in banking – Investment banking, trading & commercial banking. Your number crunching, decision making & interpersonal skills would be put to test in a challenging environment.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("fingod")'>Register</button>
                           <a href='fingod.html' target = '_blank'>More Details</a>
                         </div>
                         <div class="ps-content">
-                          <h2>Bizworth</h2>
+                          <h2  onclick="registerEvent('bizworth')" class='header-slider'>Bizworth</h2>
                           <!-- <span class="ps-price">£100</span> -->
                           <p>Valuation is an art but the first thing we learn is science. We are told we should be approximately right rather than precisely wrong. Tabulating the price may be easy but proving that the business is worth it requires skill. Intaglio presents a unique opportunity to all those ‘Fin Zombies’ to prove.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("bizworth")'>Register</button>
                           <a href='bizworth.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/80163804/#/60203882">Buy this item</a> -->
                         </div>
                         <div class="ps-content">
-                          <h2>Modulo</h2>
+                          <h2  onclick="registerEvent('modulo')" class='header-slider'>Modulo</h2>
                           <!-- <span class="ps-price">£65</span> -->
                           <p>The world of trading has evolved beyond recognition over the last few decades. What comprised of paperwork and outcry is now HFT and algorithms. Witness the breath-taking pace of live trading and face the heat of moving markets.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("modulo")'>Register</button>
                           <a href='modulo.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/90185320/#/20115038">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/fingod/fingod1.jpg);"></div>
-                          <div style="background-image:url(img/events/bizworth.jpg);"></div>
-                          <div style="background-image:url(img/events/modulo.jpg);"></div>
+                          <div style="background-image:url(img/events/fingod/fingod1.jpg);" onclick="registerEvent('fingod')"></div>
+                          <div style="background-image:url(img/events/bizworth.jpg);" onclick="registerEvent('bizworth')"></div>
+                          <div style="background-image:url(img/events/modulo.jpg);" onclick="registerEvent('modulo')"></div>
                         </div>
-                        <nav>
+                        <nav onclick="registerEvent('marketplace')" style='cursor:pointer'>
                           <a href="#" class="ps-prev" ></a>
                           <a href="#" class="ps-next" ></a>
                         </nav>
@@ -426,34 +433,37 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Wizards of the Pitch</h2>
+                          <h2  onclick="registerEvent('wotp')" class='header-slider'>Wizards of the Pitch</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Behind the greatest football players & teams of all the time are the greatest managers who formulate the master plan. This event is your chance to be that manager as you are tested on your football team management skills.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("wotp")'>Register</button>
                           <a href = 'wotp.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                         <div class="ps-content">
-                          <h2>Empires of the Mind</h2>
+                          <h2  onclick="registerEvent('eotm')" class='header-slider'>Empires of the Mind</h2>
                           <!-- <span class="ps-price">£100</span> -->
                           <p>In today’s hyper-dynamic environment, tables turn at the drop of the hat & incumbents are often unseated by unexpected entrants. This interactive game will test participants on thier ability to continously outwit their opponents in an ever changing environment & stay on top till the very end.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("eotm")'>Register</button>
                           <a href = 'eotm.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/80163804/#/60203882">Buy this item</a> -->
                         </div>
                         <div class="ps-content">
-                          <h2>Consulting Knights</h2>
+                          <h2  onclick="registerEvent('ck')" class='header-slider'>Consulting Knights</h2>
                           <!-- <span class="ps-price">£65</span> -->
                           <p>Strategy is about making choices, trade-offs. It’s about deliberately choosing to be different. It will provide a platform to deal with close to real life consulting problem. With structured thinking, in-depth analysis, heavy data mining & presentation skills, the best minds will beat the rest.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("ck")'>Register</button>
                           <a href = 'ck.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/90185320/#/20115038">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/wotp/wotp1.jpg);"></div>
-                          <div style="background-image:url(img/events/eotm/eotm1.jpg);"></div>
-                          <div style="background-image:url(img/events/consultingknights/consultingknights1.jpg);"></div>
+                          <div style="background-image:url(img/events/wotp/wotp1.jpg);" onclick="registerEvent('wotp')"></div>
+                          <div style="background-image:url(img/events/eotm/eotm1.jpg);" onclick="registerEvent('eotm')"></div>
+                          <div style="background-image:url(img/events/consultingknights/consultingknights1.jpg);" onclick="registerEvent('ck')"></div>
                         </div>
-                        <nav>
+                        <nav onclick="registerEvent('marketplace')" style='cursor:pointer'>
                           <a href="#" class="ps-prev" ></a>
                           <a href="#" class="ps-next" ></a>
                         </nav>
@@ -464,16 +474,17 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Operationalize</h2>
+                          <h2  onclick="registerEvent('operationalize')" class='header-slider'>Operationalize</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>All business operations depends on three words - people, product & profits. In the advent of digitisation & growth of e-commerce, it all depends on which organisation uses effective optimisation of resources.Widely revered among the intelligentsia across the country, this operations event carries a unique charm.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("opertaionalize")'>Register</button>
                             <a href = 'operation.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/operationalize/operationalize1.jpg);"></div>
+                          <div style="background-image:url(img/events/operationalize/operationalize1.jpg);" onclick="registerEvent('operationalize')"></div>
                         </div>
                         <!-- <nav>
                           <a href="#" class="ps-prev" ></a>
@@ -486,26 +497,28 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Sociopreneur</h2>
+                          <h2  onclick="registerEvent('socio')" class='header-slider'>Sociopreneur</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>An event that focuses on solving community issues through innovation with commercial potential.  Participants would be expected to brainstorm and bring innovative ideas about the functioning of a not-for-profit organization.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("socio")'>Register</button>
                           <a href = 'socio.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                         <div class="ps-content">
-                          <h2>Antodyaya</h2>
+                          <h2  onclick="registerEvent('antyodaya')" class='header-slider'>Antyodaya</h2>
                           <!-- <span class="ps-price">£100</span> -->
                           <p>Antyodaya is a Pan-Asia competition which aims to reward Indian and foreign students who are working in the social sector. It aims to provide solutions for those at the bottom of pyramid.The event provides the participants with a platform to showcase their endeavour</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("antyodaya")'>Register</button>
                           <a href = 'antyodaya.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/80163804/#/60203882">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/socialday/socialday1.jpg);"></div>
-                          <div style="background-image:url(img/events/antyodaya/antyodaya1.jpg);"></div>
+                          <div style="background-image:url(img/events/socialday/socialday1.jpg);" onclick="registerEvent('socio')"></div>
+                          <div style="background-image:url(img/events/antyodaya/antyodaya1.jpg);" onclick="registerEvent('antyodaya')"></div>
                         </div>
-                        <nav>
+                        <nav onclick="registerEvent('marketplace')" style='cursor:pointer'>
                           <a href="#" class="ps-prev" ></a>
                           <a href="#" class="ps-next" ></a>
                         </nav>
@@ -516,26 +529,28 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>IIMC MUN</h2>
+                          <h2  onclick="registerEvent('mun')" class='header-slider'>IIMC MUN</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>The IIM Calcutta Model United Nations seeks to test the diplomacy & policy making ability of participants in various international and national current affairs. The third edition will continue in bringing out the discussion of contemporary issues like poverty</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("mun")'>Register</button>
                           <a href = 'mun.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                         <div class="ps-content">
-                          <h2>Chanakya NITI</h2>
+                          <h2  onclick="registerEvent('chanakya')" class='header-slider'>Chanakya NITI</h2>
                           <!-- <span class="ps-price">£100</span> -->
                           <p>The 21st century would belong to India and China is an oft-quoted statement but to prove it correct would require innovative and robust strategies formulated as well as executed. ChanakyaNITI provides the platform to enable the young minds of the country to think like policymakers</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("chanakya")'>Register</button>
                           <a href = 'chanakya.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/80163804/#/60203882">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/mun/mun1.jpg);"></div>
-                          <div style="background-image:url(img/events/chanakya/chanakya1.jpg);"></div>
+                          <div style="background-image:url(img/events/mun/mun1.jpg);" onclick="registerEvent('mun')"></div>
+                          <div style="background-image:url(img/events/chanakya/chanakya1.jpg);" onclick="registerEvent('chanakya')"></div>
                         </div>
-                        <nav>
+                        <nav onclick="registerEvent('marketplace')" style='cursor:pointer'>
                           <a href="#" class="ps-prev" ></a>
                           <a href="#" class="ps-next" ></a>
                         </nav>
@@ -546,26 +561,28 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Quizzical</h2>
+                          <h2  onclick="registerEvent('quizzical')" class='header-slider'>Quizzical</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Quizzical is one of the most addictive and popular mind sports that commands great participation and viewership. Amidst the nail-biting tension and deafening silence, the best minds in the country battle out their wits to answer questions put forth by star quizmasters.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("quizzical")'>Register</button>
                           <a href = 'quizzical.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                         <div class="ps-content">
-                          <h2>Curiosio</h2>
+                          <h2  onclick="registerEvent('curiosio')" class='header-slider'>Curiosio</h2>
                           <!-- <span class="ps-price">£100</span> -->
                           <p>Neutrinos, Easter eggs, Joker-Voila! I have an answer! Think you can find out a link and connect the most random objects in the universe? Intaglio presents Curiosio to feed your inquisitive grey cells and keep then rejuvenated.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("curiosio")'>Register</button>
                           <a href = 'curiosio.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/80163804/#/60203882">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/quizzical/quizzical1.jpg);"></div>
-                          <div style="background-image:url(img/events/curiosio/curiosio1.jpg);"></div>
+                          <div style="background-image:url(img/events/quizzical/quizzical1.jpg);" onclick="registerEvent('quizzical')"></div>
+                          <div style="background-image:url(img/events/curiosio/curiosio1.jpg);" onclick="registerEvent('curiosio')"></div>
                         </div>
-                        <nav>
+                        <nav onclick="registerEvent('marketplace')" style='cursor:pointer'>
                           <a href="#" class="ps-prev" ></a>
                           <a href="#" class="ps-next" ></a>
                         </nav>
@@ -576,16 +593,17 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Reverberations</h2>
+                          <h2  onclick="registerEvent('rev')" class='header-slider'>Reverberations</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Reverberation is a phenomenon of persistence of sound for some time after it has been stopped. A scintillating series of talks by prominent personalities from diverse backgrounds.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("rev")'>Register</button>
                             <a href = 'rev.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/rev.jpg);"></div>
+                          <div style="background-image:url(img/events/rev.jpg);" onclick="registerEvent('rev')"></div>
                         </div>
                         <!-- <nav>
                           <a href="#" class="ps-prev" ></a>
@@ -598,16 +616,17 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Regalio</h2>
+                          <h2  onclick="registerEvent('regalio')" class='header-slider'>Regalio</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Regalio, the showbiz event, comes across as a perfect way to cap-off a day filled with exhausting competitions, to unwind and party. The series of entertainment programs feature renowned performers who regale the audiences with their artistic talent.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("regalio")'>Register</button>
                              <a href = 'regalio.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/regalio.jpg);"></div>
+                          <div style="background-image:url(img/events/regalio.jpg);" onclick="registerEvent('regalio')"></div>
                         </div>
                         <!-- <nav>
                           <a href="#" class="ps-prev" ></a>
@@ -620,16 +639,17 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Olympus</h2>
+                          <h2  onclick="registerEvent('olympus')" class='header-slider'>Olympus</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>The different facets of management have their own challenges and hurdles, but it takes a true leader to master all of them. The flagship event of Intaglio, Olympus will be the ultimate test for an individual through gruelling rounds of finance, strategy, marketing</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("olympus")'>Register</button>
                              <a href = 'olympus.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/olympus/olympus1.jpg);"></div>
+                          <div style="background-image:url(img/events/olympus/olympus1.jpg);" onclick="registerEvent('olympus')"></div>
                         </div>
                         <!-- <nav>
                           <a href="#" class="ps-prev" ></a>
@@ -642,16 +662,17 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Launchpad</h2>
+                          <h2  onclick="registerEvent('launchpad')" class='header-slider'>Launchpad</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Dreams are quintessential part of human psyche. India in recent times, given its vast demographic and cultural diversity and a strong growth story, provides an interesting opportunity for entrepreneurs.In this 30th edition, Intaglio acknowledges contribution of Indian entrepreneurs who have come.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("launchpad")'>Register</button>
                           <a href = 'launchpad.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/launchpad/launchpad1.jpg);"></div>
+                          <div style="background-image:url(img/events/launchpad/launchpad1.jpg);" onclick="registerEvent('launchpad')"></div>
                         </div>
                         <!-- <nav>
                           <a href="#" class="ps-prev" ></a>
@@ -664,16 +685,17 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Arena</h2>
+                          <h2  onclick="registerEvent('arena')" class='header-slider'>Arena</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Intaglio presents a series of on the spot events aimed at testing participants’ capability of taking on-the-spot decisions. The events spreads across 3 days testing participant’s management skills in all the domains – from marketing to operations to finance to strategy.</p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("arena")'>Register</button>
                           <a href = 'arena.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/arena/arena1.jpg);"></div>
+                          <div style="background-image:url(img/events/arena/arena1.jpg);" onclick="registerEvent('arena')"></div>
                         </div>
                         <!-- <nav>
                           <a href="#" class="ps-prev" ></a>
@@ -686,16 +708,17 @@
                       <section id="ps-container" class="ps-container">
                       <div class="ps-contentwrapper">
                         <div class="ps-content">
-                          <h2>Workshop</h2>
+                          <h2  onclick="registerEvent('workshop')" class='header-slider'>Workshop</h2>
                           <!-- <span class="ps-price">£140</span> -->
                           <p>Some were born with a natural ability to perform, inspire and drive people. However, the vast majority of successful managers have had some help along the way in form of training or coaching. The goal of a workshop is to provide its attendees with a focused and in-depth platform. </p>
+                          <button type="button" class="btn btn-danger" onclick='registerEvent("workshop")'>Register</button>
                               <a href = 'workshop.html' target = '_blank'>More Details</a>
                           <!-- <a href="http://www.ikea.com/gb/en/catalog/products/S79889694/#/S59901017">Buy this item</a> -->
                         </div>
                       </div>
                       <div class="ps-slidewrapper">
                         <div class="ps-slides">
-                          <div style="background-image:url(img/events/workshop.jpg);"></div>
+                          <div style="background-image:url(img/events/workshop.jpg);" onclick="registerEvent('arena')"></div>
                         </div>
                         <!-- <nav>
                           <a href="#" class="ps-prev" ></a>
@@ -1019,20 +1042,20 @@
                           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                             <div class="flipper">
                               <div class="front">
-                                <img class="swiper-clients-img caption__media" src="img/team/arnab.jpg" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/sumit.JPG" alt="Clients Logo">
                                 <div class="text-center member-info1" style="background: white;">
-                                    <h4 class="title-four member-name">Arnab Animesh Das</h4>
-                                    <div class="member-role">Design IT Head</div>
+                                    <h4 class="title-four member-name">Sumit Kathuria</h4>
+                                    <div class="member-role">Events Head</div>
                                 </div>
                               </div>
                               <div class="back">
                                     <ul class="list-unstyled contact-list" style = 'text-align:center'>
-                                        <li><i class="margin-r-10 color-base icon-call-out"></i>9563753360</li>
-                                        <li><i class="margin-r-10 color-base icon-envelope"></i> arnabad2018@email.iimcal.ac.in </li>
+                                        <li><i class="margin-r-10 color-base icon-call-out"></i>9899706085</li>
+                                        <li><i class="margin-r-10 color-base icon-envelope"></i> sumitk2018@email.iimcal.ac.in </li>
                                     </ul>
-                                    <div class="text-center member-info1-flip" style="background: white;">
-                                        <h4 class="title-four member-name">Arnab Animesh Das</h4>
-                                        <div class="member-role">Design IT Head</div>
+                                    <div class="text-center member-info1-flip" style="background: white;margin-top:120px;">
+                                        <h4 class="title-four member-name">Sumit Kathuria</h4>
+                                        <div class="member-role">Events Head</div>
                                     </div>
                               </div>
                             </div>
@@ -1171,20 +1194,20 @@
                           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                             <div class="flipper">
                               <div class="front">
-                                <img class="swiper-clients-img caption__media" src="img/team/sumit.JPG" alt="Clients Logo">
+                                <img class="swiper-clients-img caption__media" src="img/team/arnab.jpg" alt="Clients Logo">
                                 <div class="text-center member-info1" style="background: white;">
-                                    <h4 class="title-four member-name">Sumit Kathuria</h4>
-                                    <div class="member-role">Events Head</div>
+                                    <h4 class="title-four member-name">Arnab Animesh Das</h4>
+                                    <div class="member-role">Design & IT Head</div>
                                 </div>
                               </div>
                               <div class="back">
                                     <ul class="list-unstyled contact-list" style = 'text-align:center'>
-                                        <li><i class="margin-r-10 color-base icon-call-out"></i>9899706085</li>
-                                        <li><i class="margin-r-10 color-base icon-envelope"></i> sumitk2018@email.iimcal.ac.in </li>
+                                        <li><i class="margin-r-10 color-base icon-call-out"></i>9563753360</li>
+                                        <li><i class="margin-r-10 color-base icon-envelope"></i> arnabad2018@email.iimcal.ac.in </li>
                                     </ul>
-                                    <div class="text-center member-info1-flip" style="background: white;margin-top:120px;">
-                                        <h4 class="title-four member-name">Sumit Kathuria</h4>
-                                        <div class="member-role">Events Head</div>
+                                    <div class="text-center member-info1-flip" style="background: white;">
+                                        <h4 class="title-four member-name">Arnab Animesh Das</h4>
+                                        <div class="member-role">Design IT Head</div>
                                     </div>
                               </div>
                             </div>
@@ -1215,33 +1238,11 @@
         <!--========== FOOTER ==========-->
         <footer class="footer">
             <!-- Links -->
-            <div class="section-seperator">
+            <!-- <div class="section-seperator">
                 <div class="content-md container">
-                    <div class="row">
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#body">Home</a></li>
-                                <li class="footer-list-item"><a href="#about">About</a></li>
-                                <li class="footer-list-item"><a href="#events">Events</a></li>
-                                <li class="footer-list-item"><a href="#sponsors">Sponsors</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#">Twitter</a></li>
-                                <li class="footer-list-item"><a href="#">Facebook</a></li>
-                                <li class="footer-list-item"><a href="#">Instagram</a></li>
-                                <li class="footer-list-item"><a href="#">YouTube</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                    </div>
-                    <!--// end row -->
+
                 </div>
-            </div>
+            </div> -->
             <!-- End Links -->
 
             <!-- Copyright -->
@@ -1256,7 +1257,14 @@
                     </div>
                     <div class="col-xs-6 text-right">
                         <p class="margin-b-0"><span style = 'font-weight:bold'> IIM Calcutta <span> &nbsp;&nbsp;&nbsp;&nbsp; <a href = 'mailto:intaglio@email.iimcal.ac.in'>intaglio@email.iimcal.ac.in</a></p>
+                        <i><a href="#" class="fa fa-twitter"></a></i>
+                        <i><a href="#" class="fa fa-youtube-square"></a></i>
+                        <i><a href="#" class="fa fa-facebook"></a></i>
+                        <i><a href="#" class="fa fa-instagram"></a></i>
                     </div>
+                </div>
+                <div class="row">
+
                 </div>
                 <!-- // end row -->
             </div>
@@ -1374,6 +1382,20 @@
               if (event.target == modal) {
                   modal.style.display = "none";
               }
+          }
+
+          registerEvent = function(ev) {
+            console.log(ev)
+            modal.style.display = "block";
+          }
+
+          changeOpacity = function(cond) {
+            if(cond) {
+              $('.ps-slides').css('opacity','0.7');
+            }
+            else
+              $('.ps-slides').css('opacity','1');
+
           }
 
 
