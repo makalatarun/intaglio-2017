@@ -744,8 +744,8 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-/* Media Queries below 991px */
-@media (max-width: 991px) {
+/* Media Queries below 1205px */
+@media (max-width: 1205px) {
   /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
   .header {
@@ -796,6 +796,9 @@ fieldset[disabled] .btn-theme {
     position: absolute;
     top: 19px;
   }
+  .menu-container {
+    background: white;
+  }
 }
 
 /* Media Queries below 767px */
@@ -823,7 +826,7 @@ fieldset[disabled] .btn-theme {
 }
 
 /* Media Queries above 992px */
-@media (min-width: 992px) {
+@media (min-width: 1205px) {
   /* Navbar */
   .header .navbar-nav-right {
     float: right;
