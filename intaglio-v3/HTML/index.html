@@ -78,8 +78,9 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#events">Events</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Gallery</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#sponsors">Sponsors</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#">Workshop</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#">Regalio</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-                                <li class="js_nav-item nav-item" style = 'background-color:powderblue; cursor:pointer'><a class="nav-item-child nav-item-hover" href="brochure/brochure.pdf" download="brochure.pdf">Brochure</a></li>
                                 <li id = 'regBtn' class="js_nav-item nav-item" style = 'background-color:#ed5a6a; cursor:pointer; padding-right: 15px;'><a class="nav-item-child nav-item-hover">Register/Sign In</a></li>
                             </ul>
                         </div>
@@ -146,14 +147,8 @@
 
         <!--========== PAGE LAYOUT ==========-->
         <!-- About -->
-        <div id="about">
+        <div id="about" style='margin-top:5px'>
             <div class="content-lg container">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>TENETS OF PROGRESSIVISM</h2>
-                    </div>
-                </div>
-                <!-- Masonry Grid -->
                 <div class="masonry-grid row">
                     <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
                     <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
@@ -164,16 +159,14 @@
                         <img class="full-width img-responsive wow fadeInUp" src="img/500x500/01.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
                     </div>
                     <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                        <div class="margin-t-60 margin-b-60">
-                            <h2 style='color:#a6a7aa' class='remove-intag-heading-large'>Education</h2>
-                            <img class="full-width img-responsive wow fadeInUp remove-intag-heading-small" src="img/500x500/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+                        <div class="margin-b-60">
+                            <h2 style='color:#a6a7aa'>Education</h2>
                         </div>
-                        <img class="full-width img-responsive wow fadeInUp remove-intag-heading-large" src="img/500x500/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
-                        <h2 style='color:#a6a7aa' class="remove-intag-heading-small">Education</h2>
+                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
                         <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p> -->
                     </div>
                     <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                        <div class="margin-t-60 margin-b-60">
+                        <div class="margin-b-60">
                             <h2 style='color:#a6a7aa'>Digitalization</h2>
                             <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p> -->
                         </div>
@@ -253,7 +246,7 @@
         <!-- End About -->
 
         <!-- Speakers -->
-        <div id="products">
+        <div id="products" style='margin-top:5px'>
             <div class="content-lg container">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
@@ -301,13 +294,35 @@
         <!-- End Speakers -->
 
         <!-- Events -->
-        <div id = 'events' class='alternate-color'>
+        <div id = 'events' class='alternate-color' style='margin-top:5px'>
           <div class="content-lg container">
-              <div class="row margin-b-40">
+              <!-- <div class="row margin-b-40">
                   <div class="col-sm-6">
                       <h2>EVENTS</h2>
                   </div>
+              </div> -->
+              <div class = 'intag-tab-dropdown'>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Events
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a onclick="changeTab('marketing')"> Marketing </a></li>
+                      <li><a onclick="changeTab('finance')"> Finance </a></li>
+                      <li><a onclick="changeTab('entre')"> Entrepreneurship </a></li>
+                      <li><a onclick="changeTab('flagship')"> Flagship </a></li>
+                      <li><a onclick="changeTab('hr')"> Human Resources </a></li>
+                      <li><a onclick="changeTab('operations')"> Operations and Systems </a></li>
+                      <li><a onclick="changeTab('policy')"> Public Policy </a></li>
+                      <li><a onclick="changeTab('legal')"> Legal & Economics </a></li>
+                      <li><a onclick="changeTab('quiz')"> Quizzing </a></li>
+                      <li><a onclick="changeTab('strategy')"> Strategy </a></li>
+                      <li><a onclick="changeTab('social')"> Social </a></li>
+                    </ul>
+                </div>
               </div>
+
               <div class = 'intag-tabs'>
                 <div class='intag-tabs-child' onclick="changeTab('marketing')"> Marketing </div>
                 <div class='intag-tabs-child' onclick="changeTab('finance')"> Finance </div>
@@ -514,55 +529,59 @@
                       <h4 class="active intag-event-section-h4">Consulting Knights</h4>
                       <div class='intage-event-section-ul'>
                           <blockquote>
-                            <em>The most important thing is to not stop questioning</em><br/><span class='author-right'>  – Albert Einstein</span>
+                            <em>Business Strategy is the battleplan for a better future.</em><br/><span class='author-right'> - Patrick Dixon</span>
                           </blockquote>
                           <img src = 'img/events/consultingknights/consultingknights1.jpg' class='event-img img-responsive'></img>
-                          <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Quizzical is one of the most addictive and popular mind sports that commands great participation and viewership. Amidst the nail-biting tension and deafening silence, the best minds in the country battle out their wits to answer questions put forth by star quizmasters. The silence only is broken by enthusiastic & cheering crowd. Having been graced by renowned quizmasters like Derek O’ Brien, IIM Calcutta promises to host the quizzing event with full fervour and continue to be one of the most attractive events of Intaglio.</p>
-                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Strategy is about making choices, trade-offs. It’s about deliberately choosing to be different. It will provide a platform to deal with close to real life consulting problem. With structured thinking, in-depth analysis, heavy data mining & presentation skills, the best minds will beat the rest.</p>
+                          <a href = 'mailto:consultingknights@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;'>Register</button>
                       </div>
                       <h4 class='intag-event-section-h4'>Wizards of the Pitch</h4>
                       <div class='intage-event-section-ul'>
                         <blockquote>
-                          <em>An understanding of the natural world and what’s in it is a source of not only great curiosity but great fulfilment</em><br/><span class='author-right'>– David Attenborough</span>
+                          <em>Without Strategy, execution is aimless, without execution strategy is useless.</em><br/><span class='author-right'>- Morris Chang</span>
                         </blockquote>
                         <img src = 'img/events/wotp/wotp1.jpg' class='event-img img-responsive'></img>
-                        <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Neutrinos, Easter eggs, Joker-Voila! I have an answer! Think you can find out a link and connect the most random objects in the universe? Intaglio presents Curiosio to feed your inquisitive grey cells and keep then rejuvenated. Curiosio, an online quiz, will give the quizzers a set of questions to brainstorm over, use any means necessary and win cash prizes every week!</p>
+                        <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Behind the greatest football players & teams of all the time are the greatest managers who formulate the master plan. This event is your chance to be that manager as you are tested on your football team management skills.</p>
+                        <a href = 'mailto:wotp@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;'>Register</button>
                       </div>
                       <h4 class='intag-event-section-h4'>Empires of the Mind</h4>
                       <div class='intage-event-section-ul'>
                         <blockquote>
-                          <em>An understanding of the natural world and what’s in it is a source of not only great curiosity but great fulfilment</em><br/><span class='author-right'>– David Attenborough</span>
+                          <em>The best of the group comes when everyone in the group does what’s best for himself and the group.</em><br/><span class='author-right'> - John Nash</span>
                         </blockquote>
                         <img src = 'img/events/eotm/eotm1.jpg' class='event-img img-responsive'></img>
-                        <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Neutrinos, Easter eggs, Joker-Voila! I have an answer! Think you can find out a link and connect the most random objects in the universe? Intaglio presents Curiosio to feed your inquisitive grey cells and keep then rejuvenated. Curiosio, an online quiz, will give the quizzers a set of questions to brainstorm over, use any means necessary and win cash prizes every week!</p>
+                        <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>In today’s hyper-dynamic environment, tables turn at the drop of the hat & incumbents are often unseated by unexpected entrants. This interactive game will test participants on thier ability to continously outwit their opponents in an ever changing environment & stay on top till the very end.</p>
+                        <a href = 'mailto:eotm@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;'>Register</button>
                       </div>
                   </div>
-                  <div id = "content11" class='content-child'>
-                      <div class='intag-event-section' style='position:relative;'>
-                        <h4 class="active intag-event-section-h4">Run an NGO</h4>
-                        <div class='intage-event-section-ul'>
-                            <blockquote>
-                              <em>The most important thing is to not stop questioning</em><br/><span class='author-right'>  – Albert Einstein</span>
-                            </blockquote>
-                            <img src = 'img/events/quizzical/quizzical1.jpg' class='event-img img-responsive'></img>
-                            <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Quizzical is one of the most addictive and popular mind sports that commands great participation and viewership. Amidst the nail-biting tension and deafening silence, the best minds in the country battle out their wits to answer questions put forth by star quizmasters. The silence only is broken by enthusiastic & cheering crowd. Having been graced by renowned quizmasters like Derek O’ Brien, IIM Calcutta promises to host the quizzing event with full fervour and continue to be one of the most attractive events of Intaglio.</p>
-                            <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
-                            <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;'>Register</button>
-                        </div>
-                        <h4 class='intag-event-section-h4'>Antyodaya</h4>
-                        <div class='intage-event-section-ul'>
+                </div>
+                <div id = "content11" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Run an NGO</h4>
+                      <div class='intage-event-section-ul'>
                           <blockquote>
                             <em>An understanding of the natural world and what’s in it is a source of not only great curiosity but great fulfilment</em><br/><span class='author-right'>– David Attenborough</span>
                           </blockquote>
-                          <img src = 'img/events/curiosio/curiosio1.jpg' class='event-img img-responsive'></img>
-                          <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Neutrinos, Easter eggs, Joker-Voila! I have an answer! Think you can find out a link and connect the most random objects in the universe? Intaglio presents Curiosio to feed your inquisitive grey cells and keep then rejuvenated. Curiosio, an online quiz, will give the quizzers a set of questions to brainstorm over, use any means necessary and win cash prizes every week!</p>
+                          <img src = 'img/events/quizzical/quizzical1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Quizzical is one of the most addictive and popular mind sports that commands great participation and viewership. Amidst the nail-biting tension and deafening silence, the best minds in the country battle out their wits to answer questions put forth by star quizmasters. The silence only is broken by enthusiastic & cheering crowd. Having been graced by renowned quizmasters like Derek O’ Brien, IIM Calcutta promises to host the quizzing event with full fervour and continue to be one of the most attractive events of Intaglio.</p>
+                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;'>Register</button>
-                        </div>
-                    </div>
-                </div>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Antyodaya</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>The only place where poverty should be is in the museums</em><br/><span class='author-right'>– Muhammad Yunus</span>
+                        </blockquote>
+                        <img src = 'img/events/antyodaya/antyodaya1.jpg' class='event-img img-responsive'></img>
+                        <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Antyodaya is a Pan-Asia competition which aims to reward Indian and foreign students who are working in the social sector. It aims to provide solutions for those at the bottom of pyramid.
+                            The event provides the participants with a platform to showcase their endeavour to a larger audience comprising of corporates and academicians – whose experience in the field could provide valuable insights to the participants. It ensures a cooperative rather than a competitive environment for the finalists during their stint at IIM Calcutta.</p>
+                        <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;'>Register</button>
+                      </div>
+                  </div>
+              </div>
 
             </div>
           </div>
@@ -570,7 +589,7 @@
         <!-- End Events -->
 
         <!-- Work -->
-        <div id="work">
+        <div id="work" style='margin-top:5px'>
           <div class="content-lg container">
             <div class="row margin-b-10">
                 <div class="col-sm-6">
@@ -621,7 +640,7 @@
         <!-- End Work -->
 
           <!-- Sponsors -->
-          <div id = 'sponsors' class='alternate-color'>
+        <div id = 'sponsors' class='alternate-color' style='margin-top:5px'>
             <div class="content-lg container">
               <div class="row margin-b-40">
                   <div class="col-sm-6">
@@ -810,7 +829,7 @@
 
 
         <!-- Contact -->
-        <div id="contact">
+        <div id="contact" style='margin-top:5px'>
             <!-- Contact List -->
             <div class="section-seperator">
                 <div class="content-md container">
@@ -1194,6 +1213,9 @@
 
             var ph = $(this).parent().height();
             var ch = $(this).next().height();
+            $(this).parent().css({
+                'height': 'auto'
+              });
 
             if (ch > ph) {
               $(this).parent().css({
@@ -1209,7 +1231,6 @@
           function tabParentHeight() {
             var ph = $('.intag-event-section').height();
             var ch = $('.intage-event-section-ul').height();
-            console.log(ph,ch)
             if (ch > ph) {
               $('.intag-event-section').css({
                 'height': ch + 'px'
