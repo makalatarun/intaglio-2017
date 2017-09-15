@@ -266,6 +266,19 @@ a.header.nav-item-hover {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .carousel {
+    margin-top: 90px;
+  }
+
+}
+
+@media screen and (max-width: 1205px) {
+  .navbar-fixed-top > .navbar {
+    background: white
+  }
+}
+
 .team-label {
     width: 202px;
     background: white;
@@ -381,7 +394,6 @@ a.header.nav-item-hover {
 #events > .conatiner > .intag-event-section {
   zoom: 1;
   position: relative;
-  height: auto;
 }
 .intag-event-section:after,
 .intag-event-section:before {
@@ -409,10 +421,13 @@ a.header.nav-item-hover {
     display: block;
   }
 }
+
+.content-child {
+  height: 600px;
+}
 .intag-event-section div {
   zoom: 1;
   position: relative;
-  height: auto;
   min-height: 96%;
   border: 1px solid rgba(0,0,0,0.2);
   border-left: none;

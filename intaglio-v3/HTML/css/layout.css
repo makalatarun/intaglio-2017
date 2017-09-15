@@ -1001,10 +1001,7 @@ fieldset[disabled] .btn-theme {
     [Carousel]
 ------------------------------------------------------------------*/
 .carousel-indicators {
-  left: auto;
-  width: auto;
-  padding-left: 0;
-  margin-left: 0;
+  bottom: 80px
 }
 
 .carousel-centered {
