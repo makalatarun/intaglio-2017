@@ -701,3 +701,20 @@ div.event-content {
 .alternate-color {
   background: beige
 }
+
+.past-highlights {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.past-highlights-symbol {
+  font-size: 42px;
+  color: coral;
+}
+
+.past-highlights-info {
+  font-size: 20px;
+  margin-left: 23px;
+}

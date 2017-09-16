@@ -643,6 +643,7 @@ fieldset[disabled] .btn-theme {
   float: left;
   max-height: 95px;
   line-height: 65px;
+  margin-top: -10px;
 }
 
 .header .logo-wrap {
