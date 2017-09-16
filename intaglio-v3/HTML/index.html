@@ -267,35 +267,13 @@
         <!-- End Speakers -->
 
         <!-- Events Large Screen-->
-        <div id = 'events' class='large-screen' style='margin-top:40px'>
+        <div id = 'events' class='large-screen' style='margin-top:80px'>
           <div class="content-lg container" style='padding-top:10px;'>
               <div class="row margin-b-40">
                   <div class="col-sm-6">
                       <h2>EVENTS</h2>
                   </div>
               </div>
-              <div class = 'intag-tab-dropdown'>
-                  <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Events
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a onclick="changeTab('marketing')"> Marketing </a></li>
-                      <li><a onclick="changeTab('finance')"> Finance </a></li>
-                      <li><a onclick="changeTab('entre')"> Entrepreneurship </a></li>
-                      <li><a onclick="changeTab('flagship')"> Flagship </a></li>
-                      <li><a onclick="changeTab('hr')"> Human Resources </a></li>
-                      <li><a onclick="changeTab('operations')"> Operations and Systems </a></li>
-                      <li><a onclick="changeTab('policy')"> Public Policy </a></li>
-                      <li><a onclick="changeTab('legal')"> Legal & Economics </a></li>
-                      <li><a onclick="changeTab('quiz')"> Quizzing </a></li>
-                      <li><a onclick="changeTab('strategy')"> Strategy </a></li>
-                      <li><a onclick="changeTab('social')"> Social </a></li>
-                    </ul>
-                </div>
-              </div>
-
               <div class = 'intag-tabs'>
                 <div class='intag-tabs-child intag-tabs-child-active' id='intag-tabs-child-1' onclick="changeTab('marketing')"> Marketing </div>
                 <div class='intag-tabs-child' id='intag-tabs-child-2' onclick="changeTab('finance')"> Finance </div>
@@ -658,36 +636,22 @@
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a onclick="changeTab('marketing')"> Marketing </a></li>
-                      <li><a onclick="changeTab('finance')"> Finance </a></li>
-                      <li><a onclick="changeTab('entre')"> Entrepreneurship </a></li>
-                      <li><a onclick="changeTab('flagship')"> Flagship </a></li>
-                      <li><a onclick="changeTab('hr')"> Human Resources </a></li>
-                      <li><a onclick="changeTab('operations')"> Operations and Systems </a></li>
-                      <li><a onclick="changeTab('policy')"> Public Policy </a></li>
-                      <li><a onclick="changeTab('legal')"> Legal & Economics </a></li>
-                      <li><a onclick="changeTab('quiz')"> Quizzing </a></li>
-                      <li><a onclick="changeTab('strategy')"> Strategy </a></li>
-                      <li><a onclick="changeTab('social')"> Social </a></li>
+                      <li><a onclick="changeTabSmallScreen('marketing')"> Marketing </a></li>
+                      <li><a onclick="changeTabSmallScreen('finance')"> Finance </a></li>
+                      <li><a onclick="changeTabSmallScreen('entre')"> Entrepreneurship </a></li>
+                      <li><a onclick="changeTabSmallScreen('flagship')"> Flagship </a></li>
+                      <li><a onclick="changeTabSmallScreen('hr')"> Human Resources </a></li>
+                      <li><a onclick="changeTabSmallScreen('operations')"> Operations and Systems </a></li>
+                      <li><a onclick="changeTabSmallScreen('policy')"> Public Policy </a></li>
+                      <li><a onclick="changeTabSmallScreen('legal')"> Legal & Economics </a></li>
+                      <li><a onclick="changeTabSmallScreen('quiz')"> Quizzing </a></li>
+                      <li><a onclick="changeTabSmallScreen('strategy')"> Strategy </a></li>
+                      <li><a onclick="changeTabSmallScreen('social')"> Social </a></li>
                     </ul>
                 </div>
               </div>
-
-              <div class = 'intag-tabs'>
-                <div class='intag-tabs-child' onclick="changeTab('marketing')"> Marketing </div>
-                <div class='intag-tabs-child' onclick="changeTab('finance')"> Finance </div>
-                <div class='intag-tabs-child' onclick="changeTab('entre')"> Entrepreneurship </div>
-                <div class='intag-tabs-child' onclick="changeTab('flagship')"> Flagship </div>
-                <div class='intag-tabs-child' onclick="changeTab('hr')"> Human Resources </div>
-                <div class='intag-tabs-child' onclick="changeTab('operations')"> Operations and Systems </div>
-                <div class='intag-tabs-child' onclick="changeTab('policy')"> Public Policy </div>
-                <div class='intag-tabs-child' onclick="changeTab('legal')"> Legal & Economics </div>
-                <div class='intag-tabs-child' onclick="changeTab('quiz')"> Quizzing </div>
-                <div class='intag-tabs-child' onclick="changeTab('strategy')"> Strategy </div>
-                <div class='intag-tabs-child' onclick="changeTab('social')"> Social </div>
-              </div>
               <div class = "content">
-                <div id = "content1" class='content-child'>
+                <div id = "content1-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Adsense</h4>
                       <div class='intage-event-section-ul'>
@@ -711,7 +675,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content2" class='content-child'>
+                <div id = "content2-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">FinGod</h4>
                       <div class='intage-event-section-ul'>
@@ -748,7 +712,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content3" class='content-child'>
+                <div id = "content3-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Launchpad</h4>
                       <div class='intage-event-section-ul'>
@@ -776,7 +740,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content4" class='content-child'>
+                <div id = "content4-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Olympus</h4>
                       <div class='intage-event-section-ul'>
@@ -793,7 +757,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content5" class='content-child'>
+                <div id = "content5-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Synergize</h4>
                       <div class='intage-event-section-ul'>
@@ -809,7 +773,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content6" class='content-child'>
+                <div id = "content6-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Operationalize</h4>
                       <div class='intage-event-section-ul'>
@@ -838,7 +802,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content7" class='content-child'>
+                <div id = "content7-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">ChanakyaNITI</h4>
                       <div class='intage-event-section-ul'>
@@ -864,7 +828,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content8" class='content-child'>
+                <div id = "content8-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Law of the Land</h4>
                       <div class='intage-event-section-ul'>
@@ -890,7 +854,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content9" class='content-child'>
+                <div id = "content9-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Quizzical</h4>
                       <div class='intage-event-section-ul'>
@@ -915,7 +879,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content10" class='content-child'>
+                <div id = "content10-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Consulting Knights</h4>
                       <div class='intage-event-section-ul'>
@@ -952,7 +916,7 @@
                       </div>
                   </div>
                 </div>
-                <div id = "content11" class='content-child'>
+                <div id = "content11-small-screen" class='content-child-small-screen'>
                     <div class='intag-event-section' style='position:relative;'>
                       <h4 class="active intag-event-section-h4">Run an NGO</h4>
                       <div class='intage-event-section-ul'>
@@ -1690,7 +1654,7 @@
           tabParentHeight();
 
           displayTabNone = function() {
-            $('.content-child').css('display','none')
+            $('.content-child-small-screen').css('display','none')
           }
 
           changeTab = function(eventName) {
@@ -1739,6 +1703,34 @@
               case 'social': $('#content11').css('display','block')
                                  $('#intag-tabs-child-11').addClass('intag-tabs-child-active')
                                  $('#intag-tabs-child-11').siblings().removeClass('intag-tabs-child-active')
+                                break;
+            }
+          }
+
+          changeTabSmallScreen = function(eventName) {
+            displayTabNone()
+            switch(eventName) {
+              case 'marketing' : $('#content1-small-screen').css('display','block')
+                                break;
+              case 'finance': $('#content2-small-screen').css('display','block')
+                                break;
+              case 'entre': $('#content3-small-screen').css('display','block')
+                                break;
+              case 'flagship': $('#content4-small-screen').css('display','block')
+                                break;
+              case 'hr': $('#content5-small-screen').css('display','block')
+                                break;
+              case 'operations': $('#content6-small-screen').css('display','block')
+                                break;
+              case 'policy': $('#content7-small-screen').css('display','block')
+                                break;
+              case 'legal': $('#content8-small-screen').css('display','block')
+                                break;
+              case 'quiz': $('#content9-small-screen').css('display','block')
+                                break;
+              case 'strategy': $('#content10-small-screen').css('display','block')
+                                break;
+              case 'social': $('#content11-small-screen').css('display','block')
                                 break;
             }
           }
