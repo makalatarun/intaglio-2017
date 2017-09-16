@@ -2,13 +2,14 @@
   background: rgba(77,77,77,0.8)
 }
 
+
 .content-lg {
   padding-top: 50px; !important;
   padding-bottom: 100px; !important;
 }
 
 #intaglio-over-years{
-  background: url(../img/rev_intag_3.jpg) no-repeat center center;
+  background: url(../img/imagesforwebsite/10.jpg) no-repeat center center;
 }
 
 .text-over{
@@ -404,7 +405,7 @@ a.header.nav-item-hover {
   clear: both;
 }
 .intag-event-section h4 {
-  background: rgba(0,0,0,0.1);
+  background: ghostwhite;
   cursor: pointer;
   border: 1px solid rgba(0,0,0,0.2);
   border-top: none;
@@ -459,6 +460,11 @@ a.header.nav-item-hover {
   border-bottom: 1px solid rgba(0,0,0,0.2);
   border-right: none;
 }
+
+h4.intag-event-section-h4.active {
+  background: lightsteelblue;
+}
+
 @media screen and (min-width: 600px) {
   .intag-event-section .active {
     background: rgba(0,0,0,0);
@@ -588,4 +594,23 @@ blockquote > .author-right {
 .event-img {
   margin: 0 auto;
   display: block;
+}
+
+@media screen and (min-width:991px) {
+  .large-screen {
+    display: block;
+  }
+  .small-screen {
+    display: none
+  }
+}
+
+@media screen and (max-width:991px) {
+
+  .large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: block
+  }
 }
