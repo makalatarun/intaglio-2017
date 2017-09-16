@@ -75,7 +75,7 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#events">Events</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Gallery</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#sponsors">Sponsors</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#">Workshop</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#workshop">Workshop</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#">Regalio</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
                                 <li id = 'regBtn' class="js_nav-item nav-item" style = 'background-color:#ed5a6a; cursor:pointer; padding-right: 15px;'><a class="nav-item-child nav-item-hover">Register/Sign In</a></li>
@@ -171,7 +171,7 @@
                                 <!-- <h2 style='color:white'>INTAGLIO OVER THE YEARS</h2> -->
                                 <!-- <br/> -->
                                 <!-- <p style='color:white' >Intaglio is structured to comprise competitive events across various spheres of management such as Finance, Marketing, Policy, Strategy, Operations and Flagship domains with prizes worth more than INR 15 lakhs and speaker sessions on various themes.</p> -->
-                                <img class='img-responsive' src = 'img/slide_image/intag_history.jpg' id = 'slide-img'/>
+                                <img class='large-screen img-responsive' src = 'img/slide_image/intag_history.jpg' id = 'slide-img'/>
                             </div>
                             <!-- <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a> -->
                         </div>
@@ -266,14 +266,391 @@
         </div>
         <!-- End Speakers -->
 
-        <!-- Events -->
-        <div id = 'events' class='alternate-color' style='margin-top:5px'>
-          <div class="content-lg container">
-              <!-- <div class="row margin-b-40">
+        <!-- Events Large Screen-->
+        <div id = 'events' class='large-screen' style='margin-top:40px'>
+          <div class="content-lg container" style='padding-top:10px;'>
+              <div class="row margin-b-40">
                   <div class="col-sm-6">
                       <h2>EVENTS</h2>
                   </div>
-              </div> -->
+              </div>
+              <div class = 'intag-tab-dropdown'>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Events
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a onclick="changeTab('marketing')"> Marketing </a></li>
+                      <li><a onclick="changeTab('finance')"> Finance </a></li>
+                      <li><a onclick="changeTab('entre')"> Entrepreneurship </a></li>
+                      <li><a onclick="changeTab('flagship')"> Flagship </a></li>
+                      <li><a onclick="changeTab('hr')"> Human Resources </a></li>
+                      <li><a onclick="changeTab('operations')"> Operations and Systems </a></li>
+                      <li><a onclick="changeTab('policy')"> Public Policy </a></li>
+                      <li><a onclick="changeTab('legal')"> Legal & Economics </a></li>
+                      <li><a onclick="changeTab('quiz')"> Quizzing </a></li>
+                      <li><a onclick="changeTab('strategy')"> Strategy </a></li>
+                      <li><a onclick="changeTab('social')"> Social </a></li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class = 'intag-tabs'>
+                <div class='intag-tabs-child' onclick="changeTab('marketing')"> Marketing </div>
+                <div class='intag-tabs-child' onclick="changeTab('finance')"> Finance </div>
+                <div class='intag-tabs-child' onclick="changeTab('entre')"> Entrepreneurship </div>
+                <div class='intag-tabs-child' onclick="changeTab('flagship')"> Flagship </div>
+                <div class='intag-tabs-child' onclick="changeTab('hr')"> Human Resources </div>
+                <div class='intag-tabs-child' onclick="changeTab('operations')"> Operations and Systems </div>
+                <div class='intag-tabs-child' onclick="changeTab('policy')"> Public Policy </div>
+                <div class='intag-tabs-child' onclick="changeTab('legal')"> Legal & Economics </div>
+                <div class='intag-tabs-child' onclick="changeTab('quiz')"> Quizzing </div>
+                <div class='intag-tabs-child' onclick="changeTab('strategy')"> Strategy </div>
+                <div class='intag-tabs-child' onclick="changeTab('social')"> Social </div>
+              </div>
+              <div class = "content">
+                <div id = "content1" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Adsense</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>Creative without strategy is called ‘art’. Creative with strategy is called ‘advertising’</em><br/><span class='author-right'>– Jef I. Richards</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/adsense.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> Think you know the ad when you see it? This event tests your advertisement making and analysing skills. The creative minds will battle it out to create their own product and advertisement campaigns and present the rationale to a judging panel. </p>
+                          </div>
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('adsense')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/adsense.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Marketplace</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>You can’t just ask customers what they want and then try to give that to them. By the time you get it built, they’ll want something new.</em><br/><span class='author-right'>- Steve Jobs</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/marketplace/marketplace1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> Good marketing is more than the 7Ps and fancy campaigns, it can change the face of a whole industry and put the firm ahead in the Marketplace. This event tests your ability to make a full proof marketing plan that can give Kotler a run for his money. </p>
+                        </div>
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('marketplace')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/marketplace.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content2" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">FinGod</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>Good bankers, like good tea, can only be appreciated when they are in hot water</em><br/><span class='author-right'>– Jaffer Hussein</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/fingod/fingod1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Finance has always been at the top of our minds when it comes to decision making. FinGod is a skill-test across all the domains in banking – Investment banking, trading & commercial banking. Your number crunching, decision making & interpersonal skills would be put to test in a challenging environment.</p>
+                          </div>
+                          <!-- <a href = 'mailto:FinGod@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('fingod')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/fingod.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>BizWorth</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>Price is what you pay. Value is what you get.</em><br/><span class='author-right'>- Warren Buffett</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/bizworth.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> Valuation is an art but the first thing we learn is science. We are told we should be approximately right rather than precisely wrong. Tabulating the price may be easy but proving that the business is worth it requires skill. </p>
+                        </div>
+                        <!-- <a href = 'mailto:bizworth@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('bizworth')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/bizworth.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Modulus</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>One of the funny things about the stock market is that every time one person buys, another sells, and both think they are astute.</em><br/><span class='author-right'>– William Feather</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/modulo.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The world of trading has evolved beyond recognition over the last few decades. Witness the breath-taking pace of live trading and face the heat of moving markets. Do you have it in you to make the next big trade?</p>
+                        </div>
+                        <!-- <a href = 'mailto:modulus@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('modulus')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/modulus.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content3" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Launchpad</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>No idea is so outlandish that it should not be considered with a searching but at the same time a steady eye.</em><br/><span class='author-right'> - Winston Churchill</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/socialday/socialday1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>In this 30th edition, Intaglio acknowledges contribution of Indian entrepreneurs. We at Intaglio provides the much awaited platform to all the budding entrepreneurs to grab the opportunity to present their ideas in front of our esteemed judging panel.</p>
+                            <!-- <a href = 'mailto:launchpad@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          </div>
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;'  onclick="registerEvent('launchpad')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/launchpad.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Sociopreneur</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>In this life we cannot change great things, we can only do small things with great love</em><br/><span class='author-right'> – Mother Teresa</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/antyodaya/antyodaya1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> An event that focuses on solving community issues through innovation with commercial potential.  Participants would be expected to brainstorm and bring innovative ideas about the functioning of a not-for-profit organization. Apply your managerial expertise to solve live problems that such organisations are facing.</p>
+                        </div>
+                        <!-- <a href = 'mailto:social@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('socio')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/socio.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content4" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Olympus</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>“A hero is born among a hundred, a wise man is found among a thousand, but an accomplished one might not be found even among a hundred thousand men.</em><br/><span class='author-right'> - Plato</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/olympus/olympus1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The different facets of management have their own challenges and hurdles, but it takes a true leader to master all of them.
+                              The flagship event of Intaglio, Olympus is a hunt to glorify the one true leader from a galaxy of bright minds in the B-schools across the globe.</p>
+                          </div>
+                          <!-- <a href = 'mailto:olympus@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('olympus')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/olympus.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content5" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Synergize</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>“A hero is born among a hundred, a wise man is found among a thousand, but an accomplished one might not be found even among a hundred thousand men.</em><br/><span class='author-right'> - Plato</span>
+                            </blockquote>
+                            <div class='event-content'>
+                              <img src = 'img/events/olympus/olympus1.jpg' class='event-img img-responsive'></img>
+                              <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The different facets of management have their own challenges and hurdles, but it takes a true leader to master all of them.
+                              </p>
+                          </div>
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('synergize')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/synergize.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content6" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Operationalize</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>“An ounce of performance is worth pounds of promises. </em><br/><span class='author-right'> - Mae West</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/operationalize/operationalize1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> Operationalise presents a new paradigm and a vast pool of opportunities along with current & contemporary challenges in this domain. It would also test the candidate’s acumen in planning according to real life simulated situations.</p>
+                          </div>
+                          <!-- <a href = 'mailto:operationalize@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('operationalize')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/operationalize.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>DataPlay</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>In this life we cannot change great things, we can only do small things with great love</em><br/><span class='author-right'> – Mother Teresa</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/antyodaya/antyodaya1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> An event that focuses on solving community issues through innovation with commercial potential.  Participants would be expected to brainstorm and bring innovative ideas about the functioning of a not-for-profit organization.</p>
+                        </div>
+                        <!-- <a href = 'mailto:social@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('dataplay')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/dataplay.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content7" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">ChanakyaNITI</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>Purity of the speech, of the mind, of the senses, and of the compassionate heart are needed by one who desires to rise to the divine platform.</em><br/><span class='author-right'> – Chanakya</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/chanakya/chanakya1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> ChanakyaNITI provides the platform to enable the young minds of the country to put themselves into the shoes of the policymakers and provide viewpoints on policies like Employment, Cooperative federalism, Security policies, Railways to assist the government of the day.</p>
+                          </div>
+                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('chanakyaniti')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/chanakyaniti.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>IIMC MUN</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>People forget. We are here to act, We are here to deliver results. We are agents of change. Our job is to change the UN and through it, the world.</em><br/><span class='author-right'>- Ban Ki Moon</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/mun/mun1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The IIM Calcutta Model United Nations seeks to test the diplomacy & policy making ability of participants in various international and national current affairs. The third edition will continue in bringing out the discussion of contemporary issues like poverty, effect of global warming and even political issues like Brexit, Trump Rule and its implications.</p>
+                        </div>
+                        <!-- <a href = 'mailto:iimcmun@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('mun')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/mun.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content8" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Law of the Land</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>Purity of the speech, of the mind, of the senses, and of the compassionate heart are needed by one who desires to rise to the divine platform.</em><br/><span class='author-right'> – Chanakya</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/chanakya/chanakya1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The 21st century would belong to India and China is an oft-quoted statement but to prove it correct would require innovative and robust strategies formulated as well as executed. ChanakyaNITI provides the platform to enable the young minds of the country to put themselves into the shoes of the policymakers and provide viewpoints on policies like Employment, Cooperative federalism, Security policies, External affairs, Sustainable development, Farm Crisis, Railways to assist the government of the day.</p>
+                          </div>
+                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('chanakyaniti')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/chanakyaniti.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Oikonomics</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>People forget. We are here to act, We are here to deliver results. We are agents of change. Our job is to change the UN and through it, the world.</em><br/><span class='author-right'>- Ban Ki Moon</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/mun/mun1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The IIM Calcutta Model United Nations seeks to test the diplomacy & policy making ability of participants in various international and national current affairs. The third edition will continue in bringing out the discussion of contemporary issues like poverty, effect of global warming and even political issues like Brexit, Trump Rule and its implications to the forefront encouraging the participants to come up with sustainable solutions.</p>
+                        </div>
+                        <!-- <a href = 'mailto:iimcmun@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('mun')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/mun.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content9" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Quizzical</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>The most important thing is to not stop questioning</em><br/><span class='author-right'>  – Albert Einstein</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/quizzical/quizzical1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Quizzical is one of the most addictive and popular mind sports that commands great participation and viewership. Having been graced by renowned quizmasters like Derek O’ Brien, IIM Calcutta promises to host the quizzing event with full fervour and continue to be one of the most attractive events of Intaglio.</p>
+                          </div>
+                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('quizzical')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/quizzical.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Curiosio</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>An understanding of the natural world and what’s in it is a source of not only great curiosity but great fulfilment</em><br/><span class='author-right'>– David Attenborough</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/curiosio/curiosio1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Neutrinos, Easter eggs, Joker-Voila! I have an answer! Think you can find out a link and connect the most random objects in the universe? Intaglio presents Curiosio to feed your inquisitive grey cells and keep then rejuvenated.</p>
+                        </div>
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('curiosio')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/curiosio.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content10" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Consulting Knights</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>Business Strategy is the battleplan for a better future.</em><br/><span class='author-right'> - Patrick Dixon</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/consultingknights/consultingknights1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Strategy is about making choices, trade-offs. It’s about deliberately choosing to be different. It will provide a platform to deal with close to real life consulting problem. With structured thinking, in-depth analysis, heavy data mining & presentation skills, the best minds will beat the rest.</p>
+                          </div>
+                          <!-- <a href = 'mailto:consultingknights@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('ck')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/ck.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Wizards of the Pitch</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>Without Strategy, execution is aimless, without execution strategy is useless.</em><br/><span class='author-right'>- Morris Chang</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/wotp/wotp1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Behind the greatest football players & teams of all the time are the greatest managers who formulate the master plan. This event is your chance to be that manager as you are tested on your football team management skills.</p>
+                        </div>
+                        <!-- <a href = 'mailto:wotp@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('wotp')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/wotp.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Empires of the Mind</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>The best of the group comes when everyone in the group does what’s best for himself and the group.</em><br/><span class='author-right'> - John Nash</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/eotm/eotm1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>In today’s hyper-dynamic environment, tables turn at the drop of the hat & incumbents are often unseated by unexpected entrants. This interactive game will test participants on thier ability to continously outwit their opponents in an ever changing environment & stay on top till the very end.</p>
+                        </div>
+                        <!-- <a href = 'mailto:eotm@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('eotm')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/eotm.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+                </div>
+                <div id = "content11" class='content-child'>
+                    <div class='intag-event-section' style='position:relative;'>
+                      <h4 class="active intag-event-section-h4">Run an NGO</h4>
+                      <div class='intage-event-section-ul'>
+                          <blockquote>
+                            <em>An understanding of the natural world and what’s in it is a source of not only great curiosity but great fulfilment</em><br/><span class='author-right'>– David Attenborough</span>
+                          </blockquote>
+                          <div class='event-content'>
+                            <img src = 'img/events/quizzical/quizzical1.jpg' class='event-img img-responsive'></img>
+                            <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Antyodaya is a Pan-Asia competition which aims to reward Indian and foreign students who are working in the social sector. It aims to provide solutions for those at the bottom of pyramid. It ensures a cooperative rather than a competitive environment for the finalists during their stint at IIM Calcutta.</p>
+                          </div>
+                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
+                          <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;' onclick="registerEvent('ngo')">Register</button>
+                          <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/ngo.html' style='color:black'>More Details</a></button>
+                      </div>
+                      <h4 class='intag-event-section-h4'>Antyodaya</h4>
+                      <div class='intage-event-section-ul'>
+                        <blockquote>
+                          <em>The only place where poverty should be is in the museums</em><br/><span class='author-right'>– Muhammad Yunus</span>
+                        </blockquote>
+                        <div class='event-content'>
+                          <img src = 'img/events/antyodaya/antyodaya1.jpg' class='event-img img-responsive'></img>
+                          <p style = 'padding: 10px; margin: 0px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Antyodaya is a Pan-Asia competition which aims to reward Indian and foreign students who are working in the social sector. It aims to provide solutions for those at the bottom of pyramid. It ensures a cooperative rather than a competitive environment for the finalists during their stint at IIM Calcutta.</p>
+                        </div>
+                        <button class='btn btn-default pull-right margin-r-20' style='margin-top:145px;border: 3px solid black;'  onclick="registerEvent('antyodaya')">Register</button>
+                        <button class='btn btn-info pull-right margin-r-20' style='margin-top:145px;border-radius: 5px;padding: 8px 12px;'><a href='events/antyodaya.html' style='color:black'>More Details</a></button>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- End Events -->
+
+        <!-- Events Small Screen-->
+        <div id = 'events' class='small-screen' style='margin-top:5px'>
+          <div class="content-lg container">
+              <div class="row margin-b-40">
+                  <div class="col-sm-6">
+                      <h2>EVENTS</h2>
+                  </div>
+              </div>
               <div class = 'intag-tab-dropdown'>
                   <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -343,7 +720,7 @@
                           </blockquote>
                           <img src = 'img/events/fingod/fingod1.jpg' class='event-img img-responsive'></img>
                           <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Finance has always been at the top of our minds when it comes to decision making. FinGod is a skill-test across all the domains in banking – Investment banking, trading & commercial banking. Your number crunching, decision making & interpersonal skills would be put to test in a challenging environment. Do you have what it takes to emerge victorious in this fast-paced, roller coaster ride?</p>
-                          <a href = 'mailto:FinGod@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                          <!-- <a href = 'mailto:FinGod@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('fingod')">Register</button>
                           <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/fingod.html' style='color:black'>More Details</a></button>
                       </div>
@@ -354,7 +731,7 @@
                         </blockquote>
                         <img src = 'img/events/bizworth.jpg' class='event-img img-responsive'></img>
                         <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> Valuation is an art but the first thing we learn is science. We are told we should be approximately right rather than precisely wrong. Tabulating the price may be easy but proving that the business is worth it requires skill. Intaglio presents a unique opportunity to all those ‘Fin Zombies’ to prove their mettle as equity analysts, investment bankers and PE partners in a unique package of sorts. </p>
-                        <a href = 'mailto:bizworth@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                        <!-- <a href = 'mailto:bizworth@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('bizworth')">Register</button>
                         <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/bizworth.html' style='color:black'>More Details</a></button>
                       </div>
@@ -365,7 +742,7 @@
                         </blockquote>
                         <img src = 'img/events/modulo.jpg' class='event-img img-responsive'></img>
                         <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The world of trading has evolved beyond recognition over the last few decades. What comprised of paperwork and outcry is now HFT and algorithms. Witness the breath-taking pace of live trading and face the heat of moving markets. Modulus is a premier markets event, involving multiple phases across asset classes to test the skills of the participant. Do you have it in you to make the next big trade?</p>
-                        <a href = 'mailto:modulus@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                        <!-- <a href = 'mailto:modulus@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('modulus')">Register</button>
                         <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/modulus.html' style='color:black'>More Details</a></button>
                       </div>
@@ -382,7 +759,7 @@
                           <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Dreams are quintessential part of human psyche. India in recent times, given its vast demographic and cultural diversity and a strong growth story, provides an interesting opportunity for entrepreneurs.
                             In this 30th edition, Intaglio acknowledges contribution of Indian entrepreneurs who have come and revolutionized the Indian market space – Anil Agarwal, Azim Premji, Kishore Biyani, Sunil Mittal, Dhirubhai Ambani and the list goes on.
                             There are opportunities to be created and tapped and then there are the starry eyed youth who dream to make a difference – what is missing is a platform to connect the two. We at Intaglio provides the much awaited platform to all the budding entrepreneurs to grab the opportunity to present their ideas in front of our esteemed judging panel.</p>
-                          <a href = 'mailto:launchpad@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                          <!-- <a href = 'mailto:launchpad@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;'  onclick="registerEvent('launchpad')">Register</button>
                           <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/launchpad.html' style='color:black'>More Details</a></button>
                       </div>
@@ -393,7 +770,7 @@
                         </blockquote>
                         <img src = 'img/events/antyodaya/antyodaya1.jpg' class='event-img img-responsive'></img>
                         <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'> An event that focuses on solving community issues through innovation with commercial potential.  Participants would be expected to brainstorm and bring innovative ideas about the functioning of a not-for-profit organization. Apply your managerial expertise to solve live problems that such organisations are facing. You would be tested for understanding of the issue, stakeholders, corresponding social impacts, among other things. </p>
-                        <a href = 'mailto:social@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                        <!-- <a href = 'mailto:social@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('socio')">Register</button>
                         <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/socio.html' style='color:black'>More Details</a></button>
                       </div>
@@ -410,7 +787,7 @@
                           <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The different facets of management have their own challenges and hurdles, but it takes a true leader to master all of them.
                             The flagship event of Intaglio, Olympus will be the ultimate test for an individual through gruelling rounds of finance, strategy, marketing, analytics amongst other facets of management. Olympus is a hunt to glorify the one true leader from a galaxy of bright minds in the B-schools across the globe.
                             Victory belongs to the most persevering, with a grit to shine across every dimension. An ultimate conglomeration of thrill, tingle & treat, Olympus will make a run at your swagger and smarts.</p>
-                          <a href = 'mailto:olympus@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                          <!-- <a href = 'mailto:olympus@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('olympus')">Register</button>
                           <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/olympus.html' style='color:black'>More Details</a></button>
                       </div>
@@ -444,7 +821,7 @@
                             Widely revered among the intelligentsia across the country, this operations event carries a unique charm & prestige. Rising every year in relevance, stature and competitiveness, the state of affairs is always phenomenal.
                             Operationalise presents a new paradigm and a vast pool of opportunities along with current & contemporary challenges in this domain.Operationalise would test candidates on their knowledge of supply chain management, their knock of optimisation & efficiency.
                             It would also test the candidate’s acumen in planning according to real life simulated situations.</p>
-                          <a href = 'mailto:operationalize@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                          <!-- <a href = 'mailto:operationalize@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('operationalize')">Register</button>
                           <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/operationalize.html' style='color:black'>More Details</a></button>
                       </div>
@@ -470,7 +847,7 @@
                           </blockquote>
                           <img src = 'img/events/chanakya/chanakya1.jpg' class='event-img img-responsive'></img>
                           <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The 21st century would belong to India and China is an oft-quoted statement but to prove it correct would require innovative and robust strategies formulated as well as executed. ChanakyaNITI provides the platform to enable the young minds of the country to put themselves into the shoes of the policymakers and provide viewpoints on policies like Employment, Cooperative federalism, Security policies, External affairs, Sustainable development, Farm Crisis, Railways to assist the government of the day.</p>
-                          <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('chanakyaniti')">Register</button>
                           <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/chanakyaniti.html' style='color:black'>More Details</a></button>
                       </div>
@@ -481,7 +858,7 @@
                         </blockquote>
                         <img src = 'img/events/mun/mun1.jpg' class='event-img img-responsive'></img>
                         <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The IIM Calcutta Model United Nations seeks to test the diplomacy & policy making ability of participants in various international and national current affairs. The third edition will continue in bringing out the discussion of contemporary issues like poverty, effect of global warming and even political issues like Brexit, Trump Rule and its implications to the forefront encouraging the participants to come up with sustainable solutions.</p>
-                        <a href = 'mailto:iimcmun@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                        <!-- <a href = 'mailto:iimcmun@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('mun')">Register</button>
                         <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/mun.html' style='color:black'>More Details</a></button>
                       </div>
@@ -496,7 +873,7 @@
                           </blockquote>
                           <img src = 'img/events/chanakya/chanakya1.jpg' class='event-img img-responsive'></img>
                           <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The 21st century would belong to India and China is an oft-quoted statement but to prove it correct would require innovative and robust strategies formulated as well as executed. ChanakyaNITI provides the platform to enable the young minds of the country to put themselves into the shoes of the policymakers and provide viewpoints on policies like Employment, Cooperative federalism, Security policies, External affairs, Sustainable development, Farm Crisis, Railways to assist the government of the day.</p>
-                          <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                          <!-- <a href = 'mailto:chanakyaniti@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('chanakyaniti')">Register</button>
                           <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/chanakyaniti.html' style='color:black'>More Details</a></button>
                       </div>
@@ -507,7 +884,7 @@
                         </blockquote>
                         <img src = 'img/events/mun/mun1.jpg' class='event-img img-responsive'></img>
                         <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>The IIM Calcutta Model United Nations seeks to test the diplomacy & policy making ability of participants in various international and national current affairs. The third edition will continue in bringing out the discussion of contemporary issues like poverty, effect of global warming and even political issues like Brexit, Trump Rule and its implications to the forefront encouraging the participants to come up with sustainable solutions.</p>
-                        <a href = 'mailto:iimcmun@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                        <!-- <a href = 'mailto:iimcmun@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('mun')">Register</button>
                         <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/mun.html' style='color:black'>More Details</a></button>
                       </div>
@@ -547,7 +924,7 @@
                           </blockquote>
                           <img src = 'img/events/consultingknights/consultingknights1.jpg' class='event-img img-responsive'></img>
                           <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Strategy is about making choices, trade-offs. It’s about deliberately choosing to be different. It will provide a platform to deal with close to real life consulting problem. With structured thinking, in-depth analysis, heavy data mining & presentation skills, the best minds will beat the rest.</p>
-                          <a href = 'mailto:consultingknights@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                          <!-- <a href = 'mailto:consultingknights@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                           <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('ck')">Register</button>
                           <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/ck.html' style='color:black'>More Details</a></button>
                       </div>
@@ -558,7 +935,7 @@
                         </blockquote>
                         <img src = 'img/events/wotp/wotp1.jpg' class='event-img img-responsive'></img>
                         <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>Behind the greatest football players & teams of all the time are the greatest managers who formulate the master plan. This event is your chance to be that manager as you are tested on your football team management skills.</p>
-                        <a href = 'mailto:wotp@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                        <!-- <a href = 'mailto:wotp@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('wotp')">Register</button>
                         <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/wotp.html' style='color:black'>More Details</a></button>
                       </div>
@@ -569,7 +946,7 @@
                         </blockquote>
                         <img src = 'img/events/eotm/eotm1.jpg' class='event-img img-responsive'></img>
                         <p style = 'padding: 10px; margin: 20px 10px 10px 10px;font-size: 15px;text-align: justify;color:black;font-weight: 500;'>In today’s hyper-dynamic environment, tables turn at the drop of the hat & incumbents are often unseated by unexpected entrants. This interactive game will test participants on thier ability to continously outwit their opponents in an ever changing environment & stay on top till the very end.</p>
-                        <a href = 'mailto:eotm@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a>
+                        <!-- <a href = 'mailto:eotm@email.iimcal.ac.in'><i class="fa fa-envelope pull-right margin-r-20" style='cursor:pointer' aria-hidden="true"></i></a> -->
                         <button class='btn btn-default pull-right margin-r-20' style='border: 3px solid black;' onclick="registerEvent('eotm')">Register</button>
                         <button class='btn btn-info pull-right margin-r-20' style='border-radius: 5px;padding: 8px 12px;'><a href='events/eotm.html' style='color:black'>More Details</a></button>
                       </div>
@@ -606,6 +983,7 @@
           </div>
         </div>
         <!-- End Events -->
+
 
         <!-- Work -->
         <div id="work" style='margin-top:5px'>
@@ -845,6 +1223,23 @@
         </div>
         <!-- End Sponsors -->
 
+        <!--- Workshop--->
+        <div id="workshop" style='margin-top:5px'>
+            <div class="content-lg container">
+                <div class="row margin-b-20">
+                    <div class="col-sm-6">
+                        <h2>WORKSHOP</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="margin-l-20">
+                      Workshop is a focused and in-depth learning technique to understand both theoretical concepts and practical knowledge delivered by the subject matter experts. Discover what makes some people amazingly good at what they do, how greatness is grown and what really separates world-class performers from everybody else. There is so much to take in and grasp in three days!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- End Workshop --->
+
 
 
         <!-- Contact -->
@@ -867,6 +1262,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Nalband Abul Aala Abubakkar</h4>
                                     <div class="member-role">Overall Coordinator</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>9769972657</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>nalbandaa2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -892,6 +1289,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Abhishek Paul</h4>
                                     <div class="member-role">Events Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>8670252350</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>abhishekp2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -918,6 +1317,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Sumit Kathuria</h4>
                                     <div class="member-role">Events Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>9899706085</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>sumitk2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -943,6 +1344,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Astik Baraik</h4>
                                     <div class="member-role">Logistics Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>9582612589</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>astikb2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -968,6 +1371,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Swaraj Rathore</h4>
                                     <div class="member-role">Logistics Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>8602068852</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>swarajr2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -993,6 +1398,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Prajith Prasad</h4>
                                     <div class="member-role">Sponsorship Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>9446468779</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>prajithp2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -1018,6 +1425,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Ramya Kant Desabattula</h4>
                                     <div class="member-role">Sponsorship Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>9880423645</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>ramyakd2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -1040,9 +1449,11 @@
                             <div class="flipper">
                               <div class="front">
                                 <img class="swiper-clients-img caption__media" src="img/team/sarthak.jpg" alt="Clients Logo" style = 'height : 240px'>
-                                <div class="text-center member-info1" style="background: white;">
+                                <div class="text-center member-info1 small-screen-height" style="background: white;">
                                     <h4 class="title-four member-name">Sarthak Sood</h4>
                                     <div class="member-role">Sponsorship Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>8377095767</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>sarthaks2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -1068,6 +1479,8 @@
                                 <div class="text-center member-info1" style="background: white;">
                                     <h4 class="title-four member-name">Arnab Animesh Das</h4>
                                     <div class="member-role">Design & IT Head</div>
+                                    <i class="small-screen margin-r-10 color-base icon-call-out"></i><span class='small-screen' style='color:black'>9563753360</span>
+                                    <i class="small-screen margin-r-10 color-base icon-envelope"></i><span class='small-screen' style='color:black'>arnabad2018@email.iimcal.ac.in</span>
                                 </div>
                               </div>
                               <div class="back">
@@ -1093,7 +1506,8 @@
             <!-- Google Map -->
             <div id="map" class="map height-300"></div>
         </div>
-        <!-- End Contact -->
+
+                <!-- End Contact -->
         <!--========== END PAGE LAYOUT ==========-->
 
         <!-- Registration -->

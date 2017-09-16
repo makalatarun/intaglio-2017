@@ -408,6 +408,7 @@ a.header.nav-item-hover {
 .intag-event-section:after {
   clear: both;
 }
+
 .intag-event-section h4 {
   background: ghostwhite;
   cursor: pointer;
@@ -465,6 +466,7 @@ a.header.nav-item-hover {
   border-right: none;
 }
 
+
 h4.intag-event-section-h4.active {
   background: lightsteelblue;
 }
@@ -477,6 +479,7 @@ h4.intag-event-section-h4.active {
 }
 .intag-event-section .active + div {
   display: block;
+  /*height: 350px;*/
 }
 
 .intag-tabs {
@@ -598,7 +601,10 @@ blockquote > .author-right {
 .event-img {
   margin: 0 auto;
   display: block;
+  height: 150px;
 }
+
+
 
 @media screen and (min-width:991px) {
   .large-screen {
@@ -606,6 +612,9 @@ blockquote > .author-right {
   }
   .small-screen {
     display: none
+  }
+  .intag-event-section .active + div {
+    height: 350px;
   }
 }
 
@@ -617,4 +626,32 @@ blockquote > .author-right {
   .small-screen {
     display: block
   }
+
+  .team-label {
+    height: 391px;
+  }
+
+  .member-info1 {
+    height: 144px;
+  }
+
+  .small-screen-height {
+    height: 150px;
+  }
+}
+
+div.event-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border: none;
+  padding-top: 130px;
+}
+
+.contact-mobile-img {
+  width: 88px;
+  height: 129px;
+  margin-bottom: 5px;
+  margin-right: 7px;
 }
