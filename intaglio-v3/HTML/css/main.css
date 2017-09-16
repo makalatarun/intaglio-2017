@@ -8,6 +8,10 @@
   padding-bottom: 100px; !important;
 }
 
+.footer {
+  background: black;
+}
+
 #intaglio-over-years{
   background: url(../img/imagesforwebsite/10.jpg) no-repeat center center;
 }

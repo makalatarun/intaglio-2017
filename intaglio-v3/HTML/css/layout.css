@@ -33,6 +33,7 @@ html, html a, body {
 body {
   position: relative;
   font-family: Hind, sans-serif;
+  overflow-x: hidden;
 }
 
 p {
