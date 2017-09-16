@@ -1653,8 +1653,12 @@
           });
           tabParentHeight();
 
-          displayTabNone = function() {
+          displayTabNoneSmall = function() {
             $('.content-child-small-screen').css('display','none')
+          }
+
+          displayTabNone = function() {
+            $('.content-child').css('display','none')
           }
 
           changeTab = function(eventName) {
