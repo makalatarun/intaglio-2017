@@ -33,6 +33,7 @@ html, html a, body {
 body {
   position: relative;
   font-family: Hind, sans-serif;
+  overflow-x: hidden;
 }
 
 p {
@@ -642,6 +643,7 @@ fieldset[disabled] .btn-theme {
   float: left;
   max-height: 95px;
   line-height: 65px;
+  margin-top: -10px;
 }
 
 .header .logo-wrap {
@@ -1000,8 +1002,10 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
     [Carousel]
 ------------------------------------------------------------------*/
-.carousel-indicators {
-  bottom: 80px
+@media screen and (min-width:991px) {
+  .carousel-indicators {
+    bottom: 80px
+  }
 }
 
 .carousel-centered {
