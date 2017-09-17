@@ -1,10 +1,3 @@
-Created by Codrops
-License: http://tympanus.net/codrops/licensing/
+A Pen created at CodePen.io. You can find this one at https://codepen.io/oknoblich/pen/tfjFl.
 
-Background Pattern(s) from http://subtlepatterns.com/
-http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-
-normalize.css by Nicolas Gallagher: http://github.com/necolas/normalize.css
-
-
-
+ 
