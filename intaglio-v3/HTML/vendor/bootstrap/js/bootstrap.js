@@ -308,6 +308,8 @@ if (typeof jQuery === 'undefined') {
   // =========================
 
   var Carousel = function (element, options) {
+    console.log(element, options)
+
     this.$element    = $(element)
     this.$indicators = this.$element.find('.carousel-indicators')
     this.options     = options
@@ -316,7 +318,11 @@ if (typeof jQuery === 'undefined') {
     this.interval    = null
     this.$active     = null
     this.$items      = null
-
+    console.log(this.$element.find('div.active').attr('id'))
+    if(this.$element.find('div.active').attr('id') === 'intag-first-slide') {
+      console.log('inside')
+      $('.main-text').css('visibility','hidden')
+    }
     this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
 
     this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
@@ -330,7 +336,7 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.DEFAULTS = {
     interval: 5000,
-    pause: 'hover',
+    pause: '',
     wrap: true,
     keyboard: true
   }
@@ -364,6 +370,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Carousel.prototype.getItemForDirection = function (direction, active) {
+
     var activeIndex = this.getItemIndex(active)
     var willWrap = (direction == 'prev' && activeIndex === 0)
                 || (direction == 'next' && activeIndex == (this.$items.length - 1))
@@ -376,6 +383,7 @@ if (typeof jQuery === 'undefined') {
   Carousel.prototype.to = function (pos) {
     var that        = this
     var activeIndex = this.getItemIndex(this.$active = this.$element.find('.item.active'))
+
 
     if (pos > (this.$items.length - 1) || pos < 0) return
 
@@ -414,6 +422,8 @@ if (typeof jQuery === 'undefined') {
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
     var that      = this
+
+
 
     if ($next.hasClass('active')) return (this.sliding = false)
 
@@ -457,6 +467,8 @@ if (typeof jQuery === 'undefined') {
       this.sliding = false
       this.$element.trigger(slidEvent)
     }
+
+
 
     isCycling && this.cycle()
 

@@ -766,8 +766,8 @@ div.intag-team-info {
   margin: 10px;
 }
 div.carousel-heading {
-  width: 960px;
-  height: 250px;
+  width: 100%;
+  height: 87px;
   background: rgba(255,255,255,0.5);
   margin-left: 50px;
   display: flex;
@@ -777,20 +777,25 @@ div.carousel-heading {
   margin-top: 45px;
 }
 div.carousel-heading-title {
-  font-size: 48px;
+  font-size: 40px;
   color: black;
   font-weight: bold;
-  padding: 10px;
+  /* padding: 15px; */
+  /* margin: 17px; */
+  margin-top: 27px;
+  margin-left: 10px;
 }
 div.carousel-heading-points {
-  font-size: 28px;
+  font-size: 21px;
   color: black;
   font-weight: bold;
-  padding: 10px ;
+  padding: 16px;
+  margin-top: -20px;
 }
 div.main-text
 {
-    position: absolute;
-    top: 195px;
-    left: 119px;
+  position: absolute;
+  left: -50px;
+  bottom: 88px;
+  width: 100%;
 }

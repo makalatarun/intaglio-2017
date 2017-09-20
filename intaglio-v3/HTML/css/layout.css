@@ -1004,7 +1004,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 @media screen and (min-width:991px) {
   .carousel-indicators {
-    bottom: 80px
+    bottom: 55px
   }
 }
 
