@@ -210,7 +210,7 @@ h4 {
 .accordion [aria-expanded="true"],
 .accordion .collapse.in {
   color: #fff;
-  background: #17bed2;
+  background: #337ab7;
 }
 
 /*------------------------------------------------------------------

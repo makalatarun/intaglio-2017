@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'CursiveFont';
+  src: url('fonts/DancingScript-Regular.otf') format('woff2');
+}
+
 .navbar-fixed-top > .navbar {
   background: rgba(77,77,77,0.8)
 }
@@ -11,7 +16,7 @@
 }
 
 #intaglio-over-years{
-  background: url(../img/imagesforwebsite/10.jpg) no-repeat center center;
+  /*background: url(../img/imagesforwebsite/10.jpg) no-repeat center center;*/
 }
 
 .text-over{
@@ -628,6 +633,9 @@ blockquote > .author-right {
   #events {
     padding-bottom: 0px;
   }
+  .carousel-title-heading {
+      font-family: 'CursiveFont';
+  }
 }
 
 @media screen and (max-width:991px) {
@@ -756,4 +764,33 @@ div.intag-team-title {
 div.intag-team-info {
   position: absolute;
   margin: 10px;
+}
+div.carousel-heading {
+  width: 960px;
+  height: 250px;
+  background: rgba(255,255,255,0.5);
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 45px;
+}
+div.carousel-heading-title {
+  font-size: 48px;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+div.carousel-heading-points {
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+  padding: 10px ;
+}
+div.main-text
+{
+    position: absolute;
+    top: 195px;
+    left: 119px;
 }

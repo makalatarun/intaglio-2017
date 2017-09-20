@@ -104,7 +104,7 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
+            <div class="item active" id='intag-first-slide'>
               <img src="img/noborder.png" alt="...">
               <!-- <div class="carousel-caption">
 
@@ -115,19 +115,7 @@
               <!-- <div class="carousel-caption">
 
               </div> -->
-              <div class="container">
-                  <div class="carousel-centered">
-                      <div class="margin-b-40">
-                          <h1 class="carousel-title margin-t-50" style='margin-left:50px;'>
-                            INCLUSION. <br/>
-                            EDUCATION. <br/>
-                            DIGITIZATION.
-                          </h1>
-                          <!-- <p class="color-white">Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p> -->
-                      </div>
-                      <!-- <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a> -->
-                  </div>
-              </div>
+
             </div>
             <div class="item">
               <img src="img/2_new_resize.jpg" alt="...">
@@ -170,45 +158,77 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+          <div class="main-text hidden-xs">
+            <div class='carousel-heading'>
+              <div class='carousel-heading-title'>TENETS OF PROGRESSIVISM</div>
+              <div class='carousel-heading-points'>EDUCATION. INCLUSION. DIGITALIZATION.</div>
+            </div>
+          </div>
         </div>
         <!--========== SLIDER ==========-->
 
         <!--========== PAGE LAYOUT ==========-->
         <!-- About -->
         <div id="about" style='margin-top:10px'>
-            <div class="content-lg container">
-                <div class="row margin-b-10" style='margin-top:'>
-                    <div class="col-sm-6">
-                        <h2>TENETS OF PROGRESSIVISM</h2>
+          <div id = 'intaglio-over-years'>
+                <div class="content-lg container">
+                    <div class="row margin-b-40">
+                        <div class="col-sm-6">
+                            <h2>ABOUT US</h2>
+                        </div>
                     </div>
+                    <div class="row" style='display:flex;align-items:center'>
+                        <div class="large-screen col-md-5 col-sm-5 md-margin-b-60">
+                            <div class="margin-t-50 margin-b-30" class = 'text-over'>
+                                <!-- <h2 style='color:white'>INTAGLIO OVER THE YEARS</h2> -->
+                                <!-- <br/> -->
+                                <!-- <p style='color:white' >Intaglio is structured to comprise competitive events across various spheres of management such as Finance, Marketing, Policy, Strategy, Operations and Flagship domains with prizes worth more than INR 15 lakhs and speaker sessions on various themes.</p> -->
+                                <img src = 'img/slide_image/intag_history.jpg' id = 'slide-img' style='width:450px;'/>
+                            </div>
+                            <!-- <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a> -->
+                        </div>
+                        <div class="col-md-5 col-sm-7 col-md-offset-2">
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Intaglio
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                              <img class='small-screen' src = 'img/slide_image/intag_history.jpg' id = 'slide-img' style='width:200px;margin:0 auto;'/><br/>
+                                              Intaglio, the annual international business summit of IIM Calcutta has been at the epitome of management excellence since 1989. Every year the stage is set for more than 15000 students across the world to showcase the practical ideas and solutions to managerial problems. Competitive events, enlightening talks by eminent personalities and sophisticated workshops by corporates all this with a lake-side view is assured. The ball is set rolling, come and witness the most awaited summit on 15-17th December 2017.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Tenets of Progressivism
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                              <img class='small-screen' src = 'img/imagesforwebsite/flag2.jpg' id = 'slide-img' style='width:200px;margin:0 auto;'/><br/>
+                                              Progressivism is a multi-facet ideology that advocates change and reforms with its roots in the 19th century Europe. It challenges the status-quo of the system and aggressively pushes the boundaries beyond the horizon. It describes both social and economic reforms that leads to the improvement in the human condition. For our current age, this philosophy can be categorized into 3 essential tenets namely – Inclusion, Education & Digitization.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accodrion -->
+                        </div>
+                    </div>
+                    <!--// end row -->
                 </div>
-                <div class="masonry-grid row">
-                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
-                        <div class="margin-b-60">
-                            <h2 style='color:#a6a7aa'>Inclusion</h2>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p> -->
-                        </div>
-                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/01.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4  sm-margin-b-30">
-                        <div class="margin-b-60">
-                            <h2 style='color:#a6a7aa'>Education</h2>
-                        </div>
-                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p> -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                        <div class="margin-b-60">
-                            <h2 style='color:#a6a7aa'>Digitization</h2>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p> -->
-                        </div>
-                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/03.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
-                    </div>
-                </div>
-                <!-- End Masonry Grid -->
             </div>
-
             <div class="content-lg container margin-b-10" style='background:rgba(245, 245, 220, 0.6);margin-top:-90px;width:100%'>
               <div class="row margin-b-40" style="margin-left:40px;">
                   <div class="col-sm-6">
@@ -253,60 +273,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-
-            <div id = 'intaglio-over-years'>
-                <div class="content-lg container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-5 col-sm-5 md-margin-b-60">
-                            <div class="margin-t-50 margin-b-30" class = 'text-over'>
-                                <!-- <h2 style='color:white'>INTAGLIO OVER THE YEARS</h2> -->
-                                <!-- <br/> -->
-                                <!-- <p style='color:white' >Intaglio is structured to comprise competitive events across various spheres of management such as Finance, Marketing, Policy, Strategy, Operations and Flagship domains with prizes worth more than INR 15 lakhs and speaker sessions on various themes.</p> -->
-                                <img class='large-screen img-responsive' src = 'img/slide_image/intag_history.jpg' id = 'slide-img'/>
-                            </div>
-                            <!-- <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a> -->
-                        </div>
-                        <div class="col-md-5 col-sm-7 col-md-offset-2">
-                            <!-- Accordion -->
-                            <div class="accordion">
-                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                  Intaglio
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                Intaglio, the annual international business summit of IIM Calcutta has been at the epitome of management excellence since 1989. Every year the stage is set for more than 15000 students across the world to showcase the practical ideas and solutions to managerial problems. Competitive events, enlightening talks by eminent personalities and sophisticated workshops by corporates all this with a lake-side view is assured. The ball is set rolling, come and witness the most awaited summit on 15-17th December 2017.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                  Tenets of Progressivism
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                              Progressivism is a multi-facet ideology that advocates change and reforms with its roots in the 19th century Europe. It challenges the status-quo of the system and aggressively pushes the boundaries beyond the horizon. It describes both social and economic reforms that leads to the improvement in the human condition. For our current age, this philosophy can be categorized into 3 essential tenets namely – Inclusion, Education & Digitization.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Accodrion -->
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
             </div>
         </div>
         <!-- End About -->
@@ -1906,6 +1872,8 @@
             //   });
             // }
           }
+
+
 
           $(window).resize(function() {
             tabParentHeight();
