@@ -111,19 +111,6 @@
               </div> -->
             </div>
             <div class="item">
-              <img src="img/imagesforwebsite/flag2.jpg" alt="...">
-              <!-- <div class="carousel-caption">
-
-              </div> -->
-
-            </div>
-            <div class="item">
-              <img src="img/2_new_resize.jpg" alt="...">
-              <!-- <div class="carousel-caption">
-                ...
-              </div> -->
-            </div>
-            <div class="item">
               <img src="img/3_new_resize.jpg" alt="...">
               <!-- <div class="carousel-caption">
                 ...
@@ -183,7 +170,7 @@
                                 <!-- <h2 style='color:white'>INTAGLIO OVER THE YEARS</h2> -->
                                 <!-- <br/> -->
                                 <!-- <p style='color:white' >Intaglio is structured to comprise competitive events across various spheres of management such as Finance, Marketing, Policy, Strategy, Operations and Flagship domains with prizes worth more than INR 15 lakhs and speaker sessions on various themes.</p> -->
-                                <img src = 'img/slide_image/intag_history.jpg' id = 'slide-img' style='width:450px;'/>
+                                <img src = 'img/slide_image/intag_history.jpg' id = 'slide-img' style='width: 603px;margin-top: -40px;'/>
                             </div>
                             <!-- <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a> -->
                         </div>
@@ -1080,7 +1067,7 @@
           <div class="content-lg container">
             <div class="row margin-b-40">
                 <div class="col-sm-6">
-                    <h2>PAST SONSORS</h2>
+                    <h2>PAST SPONSORS</h2>
                 </div>
             </div>
               <!-- Swiper Clients -->
@@ -1776,50 +1763,12 @@
 
         <script type="text/javascript">
 
-          // $(function() {
-          //
-          //   Slider.init('content1');
-          //
-          // });
-
-        //   function change(eventName){
-        //     switch(eventName){
-        //       case 'market' : Slider.init('content1')
-        //                       break;
-        //       case 'finance' : Slider.init('content2')
-        //                       break;
-        //       case 'strategy' : Slider.init('content3')
-        //                       break;
-        //       case 'operations' : Slider.init('content4')
-        //                       break;
-        //       case 'social' : Slider.init('content5')
-        //                       break;
-        //       case 'policy' : Slider.init('content6')
-        //                       break;
-        //       case 'quiz' : Slider.init('content7')
-        //                       break;
-        //       case 'reverberations' : Slider.init('content8')
-        //                       break;
-        //       case 'regalio' : Slider.init('content9')
-        //                       break;
-        //       case 'olympus' : Slider.init('content10')
-        //                       break;
-        //       case 'launchpad' : Slider.init('content11')
-        //                       break;
-        //       case 'arena' : Slider.init('content12')
-        //                       break;
-        //       case 'workshop' : Slider.init('content13')
-        //                       break;
-        //    }
-        //  }
-
-
           $('#headingOne').click(function() {
                 $('#slide-img').attr('src','img/slide_image/intag_history.jpg')
           });
 
           $('#headingTwo').click(function() {
-                $('#slide-img').attr('src','img/imagesforwebsite/flag2.jpg')
+                $('#slide-img').attr('src','img/imagesforwebsite/rsz_flag2.jpg')
           });
 
           $('#headingThree').click(function() {
@@ -1830,42 +1779,12 @@
             event.preventDefault();
             $(this).addClass('active');
             $(this).siblings().removeClass('active');
-
-            // var ph = $(this).parent().height();
-            // var ch = $(this).next().height();
-            // $(this).parent().css({'height':'500px'})
-
-            // $(this).parent().css({
-            //     'height': 'auto'
-            //   });
-            //
-            // if (ch > ph) {
-            //   $(this).parent().css({
-            //     'min-height': ch + 'px'
-            //   });
-            // } else {
-            //   $(this).parent().css({
-            //     'height': 'auto'
-            //   });
-            // }
           });
 
           function tabParentHeight() {
             var ph = $('.intag-event-section').height();
             var ch = $('.intage-event-section-ul').height();
-            // $(this).parent().css({'height':'500px'})
-            // if (ch > ph) {
-            //   $('.intag-event-section').css({
-            //     'height': ch + 'px'
-            //   });
-            // } else {
-            //   $(this).parent().css({
-            //     'height': 'auto'
-            //   });
-            // }
           }
-
-
 
           $(window).resize(function() {
             tabParentHeight();
