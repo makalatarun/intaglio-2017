@@ -619,7 +619,7 @@ blockquote > .author-right {
     display: block;
   }
   .small-screen {
-    display: none
+    display: none!important;
   }
   .speaker-img-small {
     display: none
@@ -641,7 +641,7 @@ blockquote > .author-right {
 @media screen and (max-width:991px) {
 
   .large-screen {
-    display: none;
+    display: none!important;
   }
   .small-screen {
     display: block
@@ -665,6 +665,37 @@ blockquote > .author-right {
   }
   a.native-item-child.nav-item-hover {
     color: white !important
+  }
+  div.main-text {
+    bottom: 0!important;
+  }
+  div.carousel-heading {
+    width: 100%;
+    height: 41px!important;
+    background: rgba(255,255,255,0.5);
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 86px;
+  }
+  div.carousel-heading-title {
+    font-size: 2rem!important;
+    color: black;
+    font-weight: bold;
+    /* padding: 15px; */
+    /* margin: 17px; */
+    margin-top: 16px!important;
+    margin-left: 10px!important;
+  }
+  div.carousel-heading-points {
+    font-size: 1.4rem!important;
+    color: black;
+    font-weight: bold;
+    padding: 16px;
+    margin-top: -23px!important;
+    margin-left: 18px!important;
   }
 }
 

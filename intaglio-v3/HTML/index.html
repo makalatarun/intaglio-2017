@@ -71,14 +71,15 @@
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li id = 'home' class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#events">Events</a></li>
+                                <li class="js_nav-item nav-item large-screen"><a class="nav-item-child nav-item-hover" href="#events">Events</a></li>
+                                <li class="js_nav-item nav-item small-screen"><a class="nav-item-child nav-item-hover" href="#eventsSmall">Events</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Reverberations</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#workshop">Workshop</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#regalio">Regalio</a></li>
+                                <!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#regalio">Regalio</a></li> -->
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#sponsors">Sponsors</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Gallery</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-                                <li id = 'regBtn' class="js_nav-item nav-item" style = 'background-color:#ed5a6a; cursor:pointer; padding-right: 15px;'><a class="nav-item-child nav-item-hover">Register/Sign In</a></li>
+                                <li id = 'regBtn' class="js_nav-item nav-item" style = 'background-color:#ed5a6a; cursor:pointer; padding-right: 15px;'><a class="nav-item-child nav-item-hover" target='_blank' href='http://www.quizzinginc.com/index.php?/INTAGLIO-December-2017'>Register/Sign In</a></li>
                             </ul>
                         </div>
                     </div>
@@ -143,7 +144,7 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-          <div class="main-text hidden-xs">
+          <div class="main-text">
             <div class='carousel-heading'>
               <div class='carousel-heading-title'>TENETS OF PROGRESSIVISM</div>
               <div class='carousel-heading-points'>EDUCATION &bull; INCLUSION &bull; DIGITALIZATION</div>
@@ -612,7 +613,7 @@
         <!-- End Events -->
 
         <!-- Events Small Screen-->
-        <div id = 'events' class='small-screen' style='margin-top:5px'>
+        <div id = 'eventsSmall' class='small-screen' style='margin-top:5px'>
           <div class="content-lg container">
               <div class="row margin-b-40">
                   <div class="col-sm-6">
@@ -1891,12 +1892,12 @@
           var navbar_color = document.getElementsByClassName('navbar')[0];
 
           // When the user clicks on the button, open the modal
-          btn.onclick = function() {
-              document.getElementsByClassName('modal-content-p')[0].innerHTML = 'Registration not yet opened'
-              modal.style.display = "block";
-              console.log(navbar_color);
-              // navbar_color.style.background = 'black'
-          }
+          // btn.onclick = function() {
+          //     document.getElementsByClassName('modal-content-p')[0].innerHTML = 'Registration not yet opened'
+          //     modal.style.display = "block";
+          //     console.log(navbar_color);
+          //     // navbar_color.style.background = 'black'
+          // }
 
           // When the user clicks on <span> (x), close the modal
           span.onclick = function() {

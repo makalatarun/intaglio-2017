@@ -1008,6 +1008,12 @@ fieldset[disabled] .btn-theme {
   }
 }
 
+@media screen and (max-width:991px) {
+  .carousel-indicators {
+    bottom: 30px;
+  }
+}
+
 .carousel-centered {
   position: absolute;
   top: 50%;
