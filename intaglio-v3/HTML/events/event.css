@@ -1,0 +1,48 @@
+.header .logo {
+  width: 220px !important;
+  height: 150px;
+  float: left;
+  max-height: 95px;
+  line-height: 65px;
+  margin-top: 4px!important;
+  margin-left: -57px;
+}
+
+.header .navbar {
+  background: black;
+}
+
+.event-name {
+  color: white;
+  font-size: 26px;
+}
+
+.bgd-overlay {
+  width: 100%;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.event-details {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.details {
+  padding: 30px;
+}
+
+.poc {
+  padding: 30px;
+}
+
+.poc > ul > li {
+  padding-bottom: 5px; 
+}
+
+.rules {
+  padding-left: 30px;
+}
