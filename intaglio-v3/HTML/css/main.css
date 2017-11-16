@@ -853,17 +853,11 @@ div.main-text
 
 .btn-intag-reg {
   position: relative;
-<<<<<<< HEAD
   top: -3px;
-=======
-  top: -35px;
-  right: -291px;
->>>>>>> 8205e41b6632e3a9f4d11b3e19452244de0ad9a6
 }
 
 .btn-intag-det {
   position: relative;
-<<<<<<< HEAD
   top: -3px;
 }
 
@@ -873,8 +867,4 @@ div.main-text
   border-radius: 18px;
   margin-right: 97px;
   box-shadow: 7px 7px 8px #888888
-=======
-  top: -35px;
-  right: -103px;
->>>>>>> 8205e41b6632e3a9f4d11b3e19452244de0ad9a6
 }
