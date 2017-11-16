@@ -839,7 +839,12 @@ div.main-text
 .btn-intag {
   color: #fff;
   background-color: black;
+  /* border-radius: 17px; */
   border-color: black;
+}
+
+.btn-intag > a {
+  color: white
 }
 
 .btn-intag:hover {
@@ -848,12 +853,18 @@ div.main-text
 
 .btn-intag-reg {
   position: relative;
-  top: -35px;
-  right: -291px;
+  top: -3px;
 }
 
 .btn-intag-det {
   position: relative;
-  top: -35px;
-  right: -103px;
+  top: -3px;
+}
+
+.col-border {
+  border: 1px solid black;
+  border: 1px solid black;
+  border-radius: 18px;
+  margin-right: 97px;
+  box-shadow: 7px 7px 8px #888888
 }
