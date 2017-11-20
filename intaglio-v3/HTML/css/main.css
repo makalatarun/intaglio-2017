@@ -836,35 +836,31 @@ div.main-text
   width: 100%
 }
 
-.btn-intag {
-  color: #fff;
-  background-color: black;
-  /* border-radius: 17px; */
-  border-color: black;
+.workshop {
+  box-shadow: 10px 10px 10px #ddd;
+  padding: 10px;
+  /*border: 1px solid;*/
 }
 
-.btn-intag > a {
-  color: white
+.workshop_main {
+  width: 100%;
 }
 
-.btn-intag:hover {
-  background-color: black;
+div.wrapperWorkshop{
+	position:relative; /* important(so we can absolutely position the description div */
 }
 
-.btn-intag-reg {
-  position: relative;
-  top: -3px;
+.desc-workshop {
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn-intag-det {
-  position: relative;
-  top: -3px;
+  background-color: black;
 }
 
-.col-border {
-  border: 1px solid black;
-  border: 1px solid black;
-  border-radius: 18px;
-  margin-right: 97px;
-  box-shadow: 7px 7px 8px #888888
+.btn-intag-det > a{
+  color: white
 }
