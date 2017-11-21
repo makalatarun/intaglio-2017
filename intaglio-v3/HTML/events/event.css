@@ -160,3 +160,20 @@ a{
 .flex {
   display: flex;
 }
+@media screen and (min-width:991px){
+  .large-screen {
+    display: block;
+  }
+  .small-screen {
+    display: none!important
+  }
+}
+@media screen and (max-width:991px) {
+
+  .large-screen {
+    display: none!important;
+  }
+  .small-screen {
+    display: block
+  }
+}
