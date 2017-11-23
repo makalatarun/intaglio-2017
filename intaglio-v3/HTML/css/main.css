@@ -865,6 +865,10 @@ div.wrapperWorkshop{
   color: white
 }
 
+.btn-intag-det:hover > a{
+  color: black
+}
+
 .col-border {
   margin-right: 97px;
 }
