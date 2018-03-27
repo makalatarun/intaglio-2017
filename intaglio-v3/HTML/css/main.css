@@ -898,3 +898,17 @@ div.wrapperWorkshop{
   font-weight: bold;
   color: white;
 }
+#read-more-link {
+  color: blue;
+  cursor: pointer;
+}
+#read-less-link {
+  color: blue;
+  cursor: pointer;
+}
+#read-more {
+  display: none;
+}
+#read-less-link {
+  display: none;
+}
